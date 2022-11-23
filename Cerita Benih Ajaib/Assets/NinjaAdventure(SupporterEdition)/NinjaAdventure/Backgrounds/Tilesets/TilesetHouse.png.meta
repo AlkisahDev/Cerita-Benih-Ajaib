@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -13875,6 +13875,7 @@ TextureImporter:
       TilesetHouse_575: -34180752
       TilesetHouse_359: 530269744
       TilesetHouse_383: 2119139008
+      TilesetHouse_582: 709305728
       TilesetHouse_56: -1294980994
       TilesetHouse_401: -223087344
       TilesetHouse_551: -1869781083
@@ -13888,7 +13889,6 @@ TextureImporter:
       TilesetHouse_619: 465613987
       TilesetHouse_53: 261199314
       TilesetHouse_643: 824280353
-      TilesetHouse_582: 709305728
       TilesetHouse_213: -1477179271
       TilesetHouse_205: 1953898935
       TilesetHouse_445: -217134222
@@ -14053,14 +14053,14 @@ TextureImporter:
       TilesetHouse_112: -389238818
       TilesetHouse_124: 1468422784
       TilesetHouse_236: 1659009326
-      TilesetHouse_335: -143564925
-      TilesetHouse_269: -460870222
-      TilesetHouse_392: -1850733439
       TilesetHouse_625: 1565890272
+      TilesetHouse_269: -460870222
+      TilesetHouse_645: -21834011
+      TilesetHouse_335: -143564925
+      TilesetHouse_392: -1850733439
       TilesetHouse_98: 947447269
       TilesetHouse_24: -404687690
       TilesetHouse_632: 1355377602
-      TilesetHouse_645: -21834011
       TilesetHouse_572: -1922400923
       TilesetHouse_36: -1282018818
       TilesetHouse_216: 808761133

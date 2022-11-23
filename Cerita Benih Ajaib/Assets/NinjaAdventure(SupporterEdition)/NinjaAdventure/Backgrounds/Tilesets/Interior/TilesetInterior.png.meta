@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -5655,18 +5655,18 @@ TextureImporter:
       TilesetInterior_55: 1116834086
       TilesetInterior_245: 1579607833
       TilesetInterior_54: 638657866
-      TilesetInterior_94: 1010250260
+      TilesetInterior_244: 1116939181
       TilesetInterior_238: 1371663576
-      TilesetInterior_166: -42536614
+      TilesetInterior_94: 1010250260
       TilesetInterior_174: 1451577392
       TilesetInterior_195: 564479794
+      TilesetInterior_166: -42536614
       TilesetInterior_243: -145662125
       TilesetInterior_152: 357292586
       TilesetInterior_123: -230033129
       TilesetInterior_157: -2124720063
       TilesetInterior_241: -1725538751
       TilesetInterior_219: -701890825
-      TilesetInterior_244: 1116939181
       TilesetInterior_255: 1415967565
       TilesetInterior_190: -1972805627
       TilesetInterior_21: 309899011
@@ -5789,8 +5789,8 @@ TextureImporter:
       TilesetInterior_114: -273594646
       TilesetInterior_139: -432242192
       TilesetInterior_74: -1330124759
-      TilesetInterior_81: -1614949605
       TilesetInterior_133: 1813431925
+      TilesetInterior_81: -1614949605
       TilesetInterior_229: 2138022623
       TilesetInterior_143: -1619525730
       TilesetInterior_234: -38502488
