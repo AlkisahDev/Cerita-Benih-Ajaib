@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -5663,6 +5663,7 @@ TextureImporter:
       TilesetWater_96: -1790978890
       TilesetWater_32: 61942585
       TilesetWater_46: -2058550237
+      TilesetWater_247: 1883562997
       TilesetWater_243: 904653433
       TilesetWater_183: 1627655980
       TilesetWater_128: 1470853927
@@ -5671,16 +5672,15 @@ TextureImporter:
       TilesetWater_256: 740745286
       TilesetWater_182: 213157536
       TilesetWater_24: -783058475
-      TilesetWater_247: 1883562997
       TilesetWater_167: -1329277708
       TilesetWater_61: 1700636448
       TilesetWater_100: -6149706
       TilesetWater_89: -679926165
       TilesetWater_225: -510329866
       TilesetWater_93: 1177518281
-      TilesetWater_48: 485465756
-      TilesetWater_237: 1805715557
       TilesetWater_208: -1632649857
+      TilesetWater_237: 1805715557
+      TilesetWater_48: 485465756
       TilesetWater_62: 685486707
       TilesetWater_251: 1991262128
       TilesetWater_184: -507507456
@@ -5704,8 +5704,8 @@ TextureImporter:
       TilesetWater_147: 240734832
       TilesetWater_203: 979334611
       TilesetWater_21: 2127493876
-      TilesetWater_176: -1924724972
       TilesetWater_228: -1266714709
+      TilesetWater_176: -1924724972
       TilesetWater_91: 627254946
       TilesetWater_144: 742182232
       TilesetWater_109: -511701677
