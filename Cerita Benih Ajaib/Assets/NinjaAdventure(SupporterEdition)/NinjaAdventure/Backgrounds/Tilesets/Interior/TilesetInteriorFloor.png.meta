@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -6457,12 +6457,12 @@ TextureImporter:
       TilesetInteriorFloor_173: -629282975
       TilesetInteriorFloor_231: -594336956
       TilesetInteriorFloor_241: 1907317017
+      TilesetInteriorFloor_281: -262003661
       TilesetInteriorFloor_68: -743305335
-      TilesetInteriorFloor_203: 1466872823
       TilesetInteriorFloor_271: 1399277564
       TilesetInteriorFloor_289: 642450114
       TilesetInteriorFloor_167: 754026404
-      TilesetInteriorFloor_281: -262003661
+      TilesetInteriorFloor_203: 1466872823
       TilesetInteriorFloor_268: -1995747115
       TilesetInteriorFloor_208: -1982180090
       TilesetInteriorFloor_160: 663618079
