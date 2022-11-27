@@ -10,8 +10,8 @@ public class SnapFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 pos = new Vector3(Mathf.Round(target.position.x / snap) * 
-            snap, 0, Mathf.Round(target.position.z / snap) * snap);
+        Vector2 pos = new Vector2(Mathf.Round(target.position.x / snap) * snap, 
+            Mathf.Round(target.position.y / snap) * snap);
         transform.position = pos;
     }
 }
