@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Soal 1_KakFlora
   m_EditorClassIdentifier: 
   question: Mana pernyataan berikut yang benar mengenai rantai makanan?
+  imageQuest: {fileID: 0}
   OptionA: Semua rantai makanan diawali dengan hewan karnivora dan berakhir pada
     hewan herbivora
   OptionB: Rantai makanan pada terendah ditempati oleh tumbuhan yang mendapatkan

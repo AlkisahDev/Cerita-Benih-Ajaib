@@ -7,10 +7,10 @@ using UnityEngine;
 public class QuestionNPC : ScriptableObject
 {
     public string question;
-    // public string imageQuest;
+    public Sprite imageQuest;
 
-    public string OptionA, OptionB, OptionC, OptionD, optionE;
+    public string OptionA, OptionB, OptionC, OptionD;
     public int result;
 
-    //public string indikator;
+    public string indikator;
 }

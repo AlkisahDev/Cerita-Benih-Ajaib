@@ -7,9 +7,9 @@ using UnityEngine.UI;
 public class MinigameManager : MonoBehaviour
 {
     public List<QuestionNPC> questionList = new List<QuestionNPC>();
-    public TMP_Text question, OptionA, OptionB, OptionC, OptionD;
+    public TMP_Text question, OptionA, OptionB, OptionC, OptionD, indikator;
     //optionE;
-    //public Image imageQuest;
+    public Image imageQuest;
     public GameObject feedbackBenar, feedbackSalah;
     private int indexQuestion;
 
@@ -23,25 +23,22 @@ public class MinigameManager : MonoBehaviour
     void SetupQuestion()
     {
         question.text = questionList[indexQuestion].question;
+        indikator.text = questionList[indexQuestion].indikator;
 
         OptionA.text = questionList[indexQuestion].OptionA;
         OptionB.text = questionList[indexQuestion].OptionB;
         OptionC.text = questionList[indexQuestion].OptionC;
         OptionD.text = questionList[indexQuestion].OptionD;
 
-        //optionE.text = questionList[indexQuestion].optionE;
-
-        //indikator.text = questionList[indexIndikator].indikator;
-
-        // if(questionList[indexQuestion].imageQuest != null)
-        // {
-        //     imageQuest.gameObject.SetActive(true);
-        //     imageQuest.sprite = questionList[indexQuestion].imageQuest;
-        // }
-        // else
-        // {
-        //     imageQuest.gameObject.SetActive(false);
-        // }
+        if(questionList[indexQuestion].imageQuest != null)
+        {
+            imageQuest.gameObject.SetActive(true);
+            imageQuest.sprite = questionList[indexQuestion].imageQuest;
+        }
+        else
+        {
+            imageQuest.gameObject.SetActive(false);
+        }
     }
 
     public void ButtonQuestion(int n)
@@ -60,15 +57,13 @@ public class MinigameManager : MonoBehaviour
     {
         if(resultTrue)
         {
-                Debug.Log("Benar");
+            Debug.Log("Benar");
             feedbackBenar.SetActive(false);
             feedbackBenar.SetActive(true);
-    //         //int score = PlayerPrefs.GetInt ("score")+10;
-    //         //PlayerPrefs.SetInt("score", score);
         }
         else
         {
-                Debug.Log("Salah");
+            Debug.Log("Salah");
             feedbackSalah.SetActive(false);
             feedbackSalah.SetActive(true);
         }

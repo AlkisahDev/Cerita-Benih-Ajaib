@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Soal 2_KakSandi
   m_EditorClassIdentifier: 
   question: Jenis fauna apa saja yang termasuk dalam bagian Indonesia Timur?
+  imageQuest: {fileID: 0}
   OptionA: bekantan, owa jawa, dan  orang utan
   OptionB: kuskus, kanguru, walabi, landak irian, dan kelelawar.
   OptionC: komodo, buaya, biawak, ular, dan sebagainya.
   OptionD: gajah sumatera, badak jawa, harimau jawa
-  optionE: 2/3
   result: 1
+  indikator: 2/3
