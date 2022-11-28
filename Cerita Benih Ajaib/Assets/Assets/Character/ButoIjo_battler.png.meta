@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1272,9 +1272,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ButoIjo_battler_47: -675467975
+      ButoIjo_battler_34: 1595816490
       ButoIjo_battler_25: -352612923
-      ButoIjo_battler_48: 249394202
+      ButoIjo_battler_47: -675467975
       ButoIjo_battler_45: -443616310
       ButoIjo_battler_41: 1199426052
       ButoIjo_battler_52: 767757414
@@ -1322,8 +1322,8 @@ TextureImporter:
       ButoIjo_battler_42: 1586351118
       ButoIjo_battler_12: 650546370
       ButoIjo_battler_13: -150040061
+      ButoIjo_battler_48: 249394202
       ButoIjo_battler_17: -1301709556
-      ButoIjo_battler_34: 1595816490
       ButoIjo_battler_9: 1614506721
       ButoIjo_battler_31: -1775884384
   spritePackingTag: 

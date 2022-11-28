@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1819,6 +1819,7 @@ TextureImporter:
       TilesetLogic_76: -214348455
       TilesetLogic_73: -1449024257
       TilesetLogic_60: 1214198192
+      TilesetLogic_35: -1573897048
       TilesetLogic_10: -1203700243
       TilesetLogic_11: -1012686766
       TilesetLogic_39: 1277675573
@@ -1831,7 +1832,6 @@ TextureImporter:
       TilesetLogic_7: -540065568
       TilesetLogic_23: -1924262814
       TilesetLogic_52: 1838086987
-      TilesetLogic_77: 1523969350
       TilesetLogic_34: -545876102
       TilesetLogic_53: -761375778
       TilesetLogic_25: -741919483
@@ -1878,13 +1878,13 @@ TextureImporter:
       TilesetLogic_74: -1515265571
       TilesetLogic_56: -2075533576
       TilesetLogic_57: -1567322566
+      TilesetLogic_55: -1701726150
       TilesetLogic_0: -1663547756
-      TilesetLogic_35: -1573897048
       TilesetLogic_38: -359348380
       TilesetLogic_21: -1937566708
       TilesetLogic_67: -464211462
       TilesetLogic_46: -498264010
-      TilesetLogic_55: -1701726150
+      TilesetLogic_77: 1523969350
       TilesetLogic_22: -1479446431
   spritePackingTag: 
   pSDRemoveMatte: 0
