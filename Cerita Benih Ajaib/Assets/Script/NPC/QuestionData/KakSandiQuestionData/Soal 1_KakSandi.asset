@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Soal 1_KakSandi
   m_EditorClassIdentifier: 
   question: Apa nama dan provinsi candi yang dilingkari pada gambar berikut?
-  imageQuest: 
   OptionA: Candi Prambanan, Jawa Tengah
   OptionB: Candi Tikus, Jawa Timur
   OptionC: Candi Borobudur, Jawa Tengah
   OptionD: Candi Singasari, Jawa Timur
+  optionE: 1/3
   result: 1
