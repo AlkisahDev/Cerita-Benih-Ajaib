@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: '1. Burung elang 2. Rumput 3. Padi 4. Ular 5. Tikus 6. Jangkrik 7. Organisme 
     Urutan rantai makanan yang tepat dari awal adalah? '
+  imageQuest: {fileID: 0}
   OptionA: 1-3-4-5-2-6
   OptionB: 6-2-4-5-1-3
   OptionC: 5-4-3-1-6-2

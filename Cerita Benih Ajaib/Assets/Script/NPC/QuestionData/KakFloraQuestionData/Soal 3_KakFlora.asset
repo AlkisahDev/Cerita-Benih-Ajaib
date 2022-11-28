@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: Pernyataan yang tepat terkait faktor penyebabnya dan solusi untuk menangani
     masalah peningkatan populasi tikus di desa adalah?
+  imageQuest: {fileID: 0}
   OptionA: Faktor penyebabnya adalah kurangnya predator karnivora seperti ular dan
     burung elang. Solusinya dengan menambahkan dan mengontrol populasi predator agar
     tetap bisa menjaga stabilitas ekosistem.

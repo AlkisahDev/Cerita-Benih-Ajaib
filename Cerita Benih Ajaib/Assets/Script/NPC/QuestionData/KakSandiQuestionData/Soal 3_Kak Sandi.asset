@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: Berdasarkan ciri-ciri tersebut, daerah yang dimaksud adalah daerah flora
     bagian?
+  imageQuest: {fileID: 0}
   OptionA: Flora di Indonesia Timur
   OptionB: Flora di Indonesia Barat
   OptionC: Flora di Indonesia Tengah
   OptionD: Flora di Indonesia Selatan
-  optionE: 3/3
   result: 1
+  indikator: 3/3

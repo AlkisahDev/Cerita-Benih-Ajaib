@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Soal 1_PakDali
   m_EditorClassIdentifier: 
   question: Mana pantun berikut yang termasuk jenis pantun jenaka?
+  imageQuest: {fileID: 0}
   OptionA: Untuk apa membeli kera Lebih baik beli parkit Sedih hati tak terkira Melihat
     Bu Dali terbaring sakit
   OptionB: Dari mana datangnya lintah Dari sawah turun ke kal Dari mana datangnya
@@ -22,3 +23,4 @@ MonoBehaviour:
   OptionD: Burung kenari burung perkutut Terbang riang kesana kemari Hatiku takkan
     cemberut Pak Dali pulang hati berseri
   result: 2
+  indikator: 1/3
