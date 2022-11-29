@@ -5,11 +5,16 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 5f;
-    [SerializeField] Rigidbody2D rb ;
+    [SerializeField] Rigidbody2D rb;
     [SerializeField] Animator animator;
     [SerializeField] Vector2 movement;
     [SerializeField] Joystick joy;
     [SerializeField] AudioSource stepSound;
+
+    // void Start()
+    // {
+    //     PlayerPrefs.GetInt("PakDali", 0);
+    // }
 
     // Update is called once per frame
     void Update()

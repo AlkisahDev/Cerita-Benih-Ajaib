@@ -29,6 +29,7 @@ public class DialoguePD : MonoBehaviour
     {
         Debug.Log("Now " + currentScenePD);
         currentScenePD = PakDaliScene.scene5A;
+        activeScenePD = PlayerPrefs.GetInt("PakDali", 0);
     }
 
 
@@ -67,10 +68,12 @@ public class DialoguePD : MonoBehaviour
 
             case PakDaliScene.scene5C:
                 StartCoroutine(DelayScene5C());
+                PlayerPrefs.SetInt("PakDali", 3);
                 break;
 
             case PakDaliScene.scene5D:
                 StartCoroutine(DelayScene5D());
+                PlayerPrefs.SetInt("PakDali", 4);
                 break;
 
             case PakDaliScene.sceneEndPD:
