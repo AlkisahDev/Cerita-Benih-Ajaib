@@ -1567,6 +1567,7 @@ GameObject:
   - component: {fileID: 628903439}
   - component: {fileID: 628903441}
   - component: {fileID: 628903440}
+  - component: {fileID: 628903442}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -33188,6 +33189,21 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &628903442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628903438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4da339a4e729efb4bbb7f12debf2297c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <InfiniteHorizontal>k__BackingField: 0
+  <InfiniteVertical>k__BackingField: 1
+  <Choke>k__BackingField: 100
 --- !u!1 &765148887
 GameObject:
   m_ObjectHideFlags: 0
@@ -60868,7 +60884,6 @@ GameObject:
   - component: {fileID: 1944521814}
   - component: {fileID: 1944521813}
   - component: {fileID: 1944521812}
-  - component: {fileID: 1944521811}
   m_Layer: 0
   m_Name: onTriggerCollider
   m_TagString: Untagged
@@ -60891,20 +60906,6 @@ Transform:
   m_Father: {fileID: 2003016502}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1944521811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1944521809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac5b5805a2d97c344be0f09b5d648d81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1554045591}
-  snap: 30
 --- !u!66 &1944521812
 CompositeCollider2D:
   m_ObjectHideFlags: 0
