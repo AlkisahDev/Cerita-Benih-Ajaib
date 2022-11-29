@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayerMovement.unity
     guid: f19e42dd34d1e6a49b37071373929cdd
+  - enabled: 1
+    path: Assets/Scenes/MainMap.unity
+    guid: 18345aaf297da5746bc2225f460338c2
+  - enabled: 1
+    path: Assets/Scenes/Minigame/PakDali.unity
+    guid: f8ed42d9fa117a742aae2db13c7b66e1
+  - enabled: 1
+    path: Assets/Scenes/Minigame/KakFlora.unity
+    guid: 82839f541e65327448f0ef4b3bff4bad
+  - enabled: 1
+    path: Assets/Scenes/Minigame/KakSandi.unity
+    guid: 4b4b97a73207a1a4eb5df9584fc756c1
   m_configObjects: {}
