@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: KakekPetapa_face (1)_0
+      name: KakekPertapa_face_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fdb06a1513febd43b6b969fae3e8025
-      internalID: -100293924
+      spriteID: 74050bd925ff7614db99944ea655f0e3
+      internalID: 341989506
       vertices: []
       indices: 
       edges: []
@@ -147,7 +147,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      KakekPetapa_face (1)_0: -100293924
+      KakekPertapa_face_0: 341989506
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

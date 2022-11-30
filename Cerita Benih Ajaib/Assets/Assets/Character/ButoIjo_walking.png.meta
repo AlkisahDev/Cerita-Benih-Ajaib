@@ -1,5 +1,4 @@
 fileFormatVersion: 2
-guid: 4e83d237086806a46b7970999da45b9d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -112,18 +111,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -131,10 +118,6 @@ TextureImporter:
       name: ButoIjo_walking_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 336
-        width: 33
-        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,8 +125,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef01c3f42742920468174594a79b2805
-      internalID: -346243232
       vertices: []
       indices: 
       edges: []
@@ -152,10 +133,6 @@ TextureImporter:
       name: ButoIjo_walking_1
       rect:
         serializedVersion: 2
-        x: 55
-        y: 336
-        width: 33
-        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,8 +140,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07fd4649523bb174e9c2c8248dbbf12a
-      internalID: -1556268005
       vertices: []
       indices: 
       edges: []
@@ -173,10 +148,6 @@ TextureImporter:
       name: ButoIjo_walking_2
       rect:
         serializedVersion: 2
-        x: 103
-        y: 336
-        width: 33
-        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,8 +155,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2768744f4efe8c140913fa9e824c9c7b
-      internalID: -608894938
       vertices: []
       indices: 
       edges: []
@@ -194,10 +163,6 @@ TextureImporter:
       name: ButoIjo_walking_3
       rect:
         serializedVersion: 2
-        x: 11
-        y: 288
-        width: 26
-        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,8 +170,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf665adc053a0444ab01e3f598c5e143
-      internalID: 469579212
       vertices: []
       indices: 
       edges: []
@@ -215,10 +178,6 @@ TextureImporter:
       name: ButoIjo_walking_4
       rect:
         serializedVersion: 2
-        x: 59
-        y: 288
-        width: 26
-        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +185,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 956faaa317d880946b3c2491bca17591
-      internalID: -1685139231
       vertices: []
       indices: 
       edges: []
@@ -236,10 +193,6 @@ TextureImporter:
       name: ButoIjo_walking_5
       rect:
         serializedVersion: 2
-        x: 107
-        y: 288
-        width: 26
-        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,8 +200,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32c50044669647b4490eae992eccfbc8
-      internalID: -486337529
       vertices: []
       indices: 
       edges: []
@@ -257,10 +208,6 @@ TextureImporter:
       name: ButoIjo_walking_6
       rect:
         serializedVersion: 2
-        x: 10
-        y: 240
-        width: 26
-        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,8 +215,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74d460fd86fc03847b4ccd649d77c60e
-      internalID: 669435577
       vertices: []
       indices: 
       edges: []
@@ -278,10 +223,6 @@ TextureImporter:
       name: ButoIjo_walking_7
       rect:
         serializedVersion: 2
-        x: 58
-        y: 240
-        width: 26
-        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,8 +230,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb856e5b03831604d96fc8f7f6bb75ca
-      internalID: 1017356445
       vertices: []
       indices: 
       edges: []
@@ -299,10 +238,6 @@ TextureImporter:
       name: ButoIjo_walking_8
       rect:
         serializedVersion: 2
-        x: 106
-        y: 240
-        width: 26
-        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,8 +245,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eda25286b4d7f024aaf6c728a9e70a23
-      internalID: -895928899
       vertices: []
       indices: 
       edges: []
@@ -320,10 +253,6 @@ TextureImporter:
       name: ButoIjo_walking_9
       rect:
         serializedVersion: 2
-        x: 7
-        y: 192
-        width: 33
-        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,8 +260,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10fdd4259af819343ad531d9bc5baf17
-      internalID: 738619968
       vertices: []
       indices: 
       edges: []
@@ -341,10 +268,6 @@ TextureImporter:
       name: ButoIjo_walking_10
       rect:
         serializedVersion: 2
-        x: 55
-        y: 192
-        width: 33
-        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,8 +275,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44aa4bccb2b3f044aaf036c93c651cef
-      internalID: -1726986010
       vertices: []
       indices: 
       edges: []
@@ -362,10 +283,6 @@ TextureImporter:
       name: ButoIjo_walking_11
       rect:
         serializedVersion: 2
-        x: 103
-        y: 192
-        width: 33
-        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,8 +290,6 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c768ba5bac1c854180adedc06b2b245
-      internalID: -141383203
       vertices: []
       indices: 
       edges: []
@@ -390,18 +305,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ButoIjo_walking_0: -346243232
-      ButoIjo_walking_8: -895928899
-      ButoIjo_walking_7: 1017356445
-      ButoIjo_walking_1: -1556268005
-      ButoIjo_walking_9: 738619968
-      ButoIjo_walking_6: 669435577
-      ButoIjo_walking_3: 469579212
-      ButoIjo_walking_4: -1685139231
-      ButoIjo_walking_2: -608894938
-      ButoIjo_walking_11: -141383203
-      ButoIjo_walking_5: -486337529
-      ButoIjo_walking_10: -1726986010
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
