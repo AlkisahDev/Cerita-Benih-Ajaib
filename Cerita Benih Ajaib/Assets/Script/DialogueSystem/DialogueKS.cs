@@ -29,7 +29,6 @@ public class DialogueKS : MonoBehaviour
     {
         Debug.Log("Now " + currentSceneKS);
         currentSceneKS = KakSandiScene.scene7A;
-        activeSceneKS = PlayerPrefs.GetInt("KakSandi", 0);
     }
 
 
@@ -68,12 +67,10 @@ public class DialogueKS : MonoBehaviour
 
             case KakSandiScene.scene7C:
                 StartCoroutine(DelayScene7C());
-                PlayerPrefs.SetInt("KakSandi", 3);
                 break;
 
             case KakSandiScene.scene7D:
                 StartCoroutine(DelayScene7D());
-                PlayerPrefs.SetInt("KakSandi", 4);
                 break;
 
             case KakSandiScene.sceneEndKS:

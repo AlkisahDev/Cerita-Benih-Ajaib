@@ -29,7 +29,6 @@ public class DialogueKF : MonoBehaviour
     {
         Debug.Log("Now " + currentSceneKF);
         currentSceneKF = KakFloraScene.scene6A;
-        activeSceneKF = PlayerPrefs.GetInt("KakFlora", 0);
     }
 
 
@@ -68,12 +67,10 @@ public class DialogueKF : MonoBehaviour
 
             case KakFloraScene.scene6C:
                 StartCoroutine(DelayScene6C());
-                PlayerPrefs.SetInt("KakFlora", 3);
                 break;
 
             case KakFloraScene.scene6D:
                 StartCoroutine(DelayScene6D());
-                PlayerPrefs.SetInt("KakFlora", 4);
                 break;
 
             case KakFloraScene.sceneEndKF:

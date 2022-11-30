@@ -13,11 +13,6 @@ public class DialogTrigger : MonoBehaviour
         Debug.Log("Start Dialogue");
         FindObjectOfType<DialogueManager>().OpenDialogue(messages, actors);
     }
-
-    public void StartMiniGame(string sceneName)
-    {
-        SceneLoader.ProgressLoad(sceneName);
-    }
 }
 
 [System.Serializable]
