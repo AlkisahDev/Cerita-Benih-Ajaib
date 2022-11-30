@@ -4,15 +4,23 @@ using UnityEngine;
 
 public class TestScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] float speed = 1;
+    [SerializeField] int spawnPosX = 0;
+    [SerializeField] int spawnPosY = 0;
+    [SerializeField] int spawnPosZ = 0;
+    [SerializeField] int maxPosY = 0;
+
+    float timer;
+
+    private void Start()
     {
-        
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        transform.Translate(Vector3.down * Time.deltaTime * speed);
+
+        if (this.transform.position.y < maxPosY)
+            transform.position = new Vector3(spawnPosX, spawnPosY, spawnPosZ);
     }
 }
