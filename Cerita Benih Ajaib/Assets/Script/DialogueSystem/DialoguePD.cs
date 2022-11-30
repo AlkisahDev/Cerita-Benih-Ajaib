@@ -13,6 +13,11 @@ public class DialoguePD : MonoBehaviour
     [SerializeField] GameObject scene5D;
     [SerializeField] GameObject sceneEndPD;
 
+    public GameObject noteButtonPD;
+    public GameObject itemPD;
+    public GameObject gate1;
+    public GameObject kochengQPD;
+
     public int activeScenePD = 0;
 
     public enum PakDaliScene
@@ -25,10 +30,11 @@ public class DialoguePD : MonoBehaviour
     }
     public PakDaliScene currentScenePD;
 
-    private void Start()
+    private void Awake()
     {
         Debug.Log("Now " + currentScenePD);
         currentScenePD = PakDaliScene.scene5A;
+        kochengQPD.SetActive(false);
     }
 
 
@@ -58,22 +64,47 @@ public class DialoguePD : MonoBehaviour
         switch (currentScenePD)
         {
             case PakDaliScene.scene5A:
+
+                itemPD.SetActive(false);
+                kochengQPD.SetActive(false);
+                gate1.SetActive(true);
+
                 StartCoroutine(DelayScene5A());
                 return;
 
             case PakDaliScene.scene5B:
+
+                itemPD.SetActive(false);
+                kochengQPD.SetActive(false);
+                gate1.SetActive(true);
+
                 StartCoroutine(DelayScene5B());
                 break;
 
             case PakDaliScene.scene5C:
+
+                itemPD.SetActive(false);
+                kochengQPD.SetActive(false);
+                gate1.SetActive(true);
+
                 StartCoroutine(DelayScene5C());
                 break;
 
             case PakDaliScene.scene5D:
+
+                itemPD.SetActive(false);
+                kochengQPD.SetActive(false);
+                gate1.SetActive(true);
+
                 StartCoroutine(DelayScene5D());
                 break;
 
             case PakDaliScene.sceneEndPD:
+
+                itemPD.SetActive(true);
+                kochengQPD.SetActive(true);
+                gate1.SetActive(false);
+
                 StartCoroutine(DelaySceneEndPD());
                 break;
         }
@@ -81,6 +112,7 @@ public class DialoguePD : MonoBehaviour
 
     IEnumerator DelayScene5A()
     {
+        noteButtonPD.SetActive(false);
         yield return new WaitForSeconds(0.9f);
         Debug.Log("Now " + currentScenePD);
         scene5A.SetActive(true);
@@ -102,6 +134,7 @@ public class DialoguePD : MonoBehaviour
         scene5C.SetActive(false);
         scene5D.SetActive(false);
         sceneEndPD.SetActive(false);
+        noteButtonPD.SetActive(true);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -114,6 +147,7 @@ public class DialoguePD : MonoBehaviour
         scene5B.SetActive(false);
         scene5D.SetActive(false);
         sceneEndPD.SetActive(false);
+        noteButtonPD.SetActive(true);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -126,6 +160,7 @@ public class DialoguePD : MonoBehaviour
         scene5B.SetActive(false);
         scene5C.SetActive(false);
         sceneEndPD.SetActive(false);
+        noteButtonPD.SetActive(false);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -138,6 +173,7 @@ public class DialoguePD : MonoBehaviour
         scene5B.SetActive(false);
         scene5C.SetActive(false);
         scene5D.SetActive(false);
+        noteButtonPD.SetActive(false);
         // yield return new WaitForSeconds(1f);
     }
 }
