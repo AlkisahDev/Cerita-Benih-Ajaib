@@ -15,13 +15,13 @@ public class SwitchTree : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer >= 1f && timer < 2f)
+        if (timer >= 0.3f && timer < 0.5f)
         {
             tree1.SetActive(true);
             tree2.SetActive(false);
             Debug.Log("Tree1");
         }
-        else if (timer >= 2f)
+        else if (timer >= 0.5f)
         {
             tree1.SetActive(false);
             tree2.SetActive(true);
