@@ -8,25 +8,11 @@ public class NPCCollider : MonoBehaviour
     [SerializeField] GameObject interactButton;
     [SerializeField] GameObject dialogCharacter;
 
-
     private void Start()
     {
         interactButton.SetActive(false);
         dialogCharacter.SetActive(false);
-
     }
-    // Update is called once per frame
-    // void Update()
-    // {
-    //     if (interactButtonActive)
-    //     {
-    //         interactButton.SetActive(true);
-    //     }
-    //     else
-    //     {
-    //         interactButton.SetActive(false);
-    //     }
-    // }
 
     private void OnTriggerEnter2D(Collider2D other)
     {

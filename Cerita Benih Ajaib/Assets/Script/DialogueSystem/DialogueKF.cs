@@ -13,6 +13,11 @@ public class DialogueKF : MonoBehaviour
     [SerializeField] GameObject scene6D;
     [SerializeField] GameObject sceneEndKF;
 
+    public GameObject noteButtonKF;
+    public GameObject itemKF;
+    public GameObject gate2;
+    public GameObject kochengQKF;
+
     public int activeSceneKF = 0;
 
     public enum KakFloraScene
@@ -25,10 +30,11 @@ public class DialogueKF : MonoBehaviour
     }
     public KakFloraScene currentSceneKF;
 
-    private void Start()
+    private void Awake()
     {
         Debug.Log("Now " + currentSceneKF);
         currentSceneKF = KakFloraScene.scene6A;
+        kochengQKF.SetActive(false);
     }
 
 
@@ -58,22 +64,47 @@ public class DialogueKF : MonoBehaviour
         switch (currentSceneKF)
         {
             case KakFloraScene.scene6A:
+
+                itemKF.SetActive(false);
+                kochengQKF.SetActive(false);
+                gate2.SetActive(true);
+
                 StartCoroutine(DelayScene6A());
                 return;
 
             case KakFloraScene.scene6B:
+
+                itemKF.SetActive(false);
+                kochengQKF.SetActive(false);
+                gate2.SetActive(true);
+
                 StartCoroutine(DelayScene6B());
                 break;
 
             case KakFloraScene.scene6C:
+
+                itemKF.SetActive(false);
+                kochengQKF.SetActive(false);
+                gate2.SetActive(true);
+
                 StartCoroutine(DelayScene6C());
                 break;
 
             case KakFloraScene.scene6D:
+
+                itemKF.SetActive(false);
+                kochengQKF.SetActive(false);
+                gate2.SetActive(true);
+
                 StartCoroutine(DelayScene6D());
                 break;
 
             case KakFloraScene.sceneEndKF:
+
+                itemKF.SetActive(true);
+                kochengQKF.SetActive(true);
+                gate2.SetActive(false);
+
                 StartCoroutine(DelaySceneEndKF());
                 break;
         }
@@ -81,6 +112,7 @@ public class DialogueKF : MonoBehaviour
 
     IEnumerator DelayScene6A()
     {
+        noteButtonKF.SetActive(false);
         yield return new WaitForSeconds(0.9f);
         Debug.Log("Now " + currentSceneKF);
         scene6A.SetActive(true);
@@ -102,6 +134,7 @@ public class DialogueKF : MonoBehaviour
         scene6C.SetActive(false);
         scene6D.SetActive(false);
         sceneEndKF.SetActive(false);
+        noteButtonKF.SetActive(true);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -114,6 +147,7 @@ public class DialogueKF : MonoBehaviour
         scene6B.SetActive(false);
         scene6D.SetActive(false);
         sceneEndKF.SetActive(false);
+        noteButtonKF.SetActive(true);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -126,6 +160,7 @@ public class DialogueKF : MonoBehaviour
         scene6B.SetActive(false);
         scene6C.SetActive(false);
         sceneEndKF.SetActive(false);
+        noteButtonKF.SetActive(false);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -138,6 +173,7 @@ public class DialogueKF : MonoBehaviour
         scene6B.SetActive(false);
         scene6C.SetActive(false);
         scene6D.SetActive(false);
+        noteButtonKF.SetActive(false);
         // yield return new WaitForSeconds(1f);
     }
 }
