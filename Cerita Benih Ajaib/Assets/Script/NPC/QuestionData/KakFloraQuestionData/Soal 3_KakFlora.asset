@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7d81c2b3d91e745bf5a62e642ef6e4, type: 3}
+  m_Name: Soal 3_KakFlora
+  m_EditorClassIdentifier: 
+  question: Pernyataan yang tepat terkait faktor penyebabnya dan solusi untuk menangani
+    masalah peningkatan populasi tikus di desa adalah?
+  imageQuest: {fileID: 0}
+  OptionA: Faktor penyebabnya adalah kurangnya predator karnivora seperti ular dan
+    burung elang. Solusinya dengan menambahkan dan mengontrol populasi predator agar
+    tetap bisa menjaga stabilitas ekosistem.
+  OptionB: Faktor penyebabnya adalah jumlah padi yang terlalu banyak. Solusinya dengan
+    menambahkan predator di daerah desa seperti ular dan burung elang.
+  OptionC: Faktor penyebabnya adalah terlalu banyaknya jangkrik di sawah dekat dengan
+    pedesaan. Solusinya dengan memburu habis semua jangkrik agar para tikus tidak
+    bisa mendapatkan makanannya.
+  OptionD: 'Faktor penyebabnya adalah kurang bersihnya lingkungan desa. Solusinya
+    dengan mengusir semua tikus yang berkeliaran di desa. '
+  result: 0
+  indikator: 3/3

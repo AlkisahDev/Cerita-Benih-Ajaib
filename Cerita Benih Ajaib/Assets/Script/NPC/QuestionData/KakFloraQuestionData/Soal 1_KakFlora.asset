@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7d81c2b3d91e745bf5a62e642ef6e4, type: 3}
+  m_Name: Soal 1_KakFlora
+  m_EditorClassIdentifier: 
+  question: Mana pernyataan berikut yang benar mengenai rantai makanan?
+  imageQuest: {fileID: 0}
+  OptionA: Semua rantai makanan diawali dengan hewan karnivora dan berakhir pada
+    hewan herbivora
+  OptionB: Rantai makanan pada terendah ditempati oleh tumbuhan yang mendapatkan
+    makananya dengan cara berfotosintesis
+  OptionC: Hewan herbivora, omnivora, dan karnivora dapat hidup tanpa memerlukan
+    tumbuhan.
+  OptionD: Hewan yang sudah mati tidak akan terurai oleh organisme
+  result: 1
+  indikator: 1/3

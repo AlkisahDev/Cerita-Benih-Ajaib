@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7d81c2b3d91e745bf5a62e642ef6e4, type: 3}
+  m_Name: Soal 1_PakDali
+  m_EditorClassIdentifier: 
+  question: Mana pantun berikut yang termasuk jenis pantun jenaka?
+  imageQuest: {fileID: 0}
+  OptionA: Untuk apa membeli kera Lebih baik beli parkit Sedih hati tak terkira Melihat
+    Bu Dali terbaring sakit
+  OptionB: Dari mana datangnya lintah Dari sawah turun ke kal Dari mana datangnya
+    cinta Dari mata turun ke hati
+  OptionC: Pohon manggis di tepi rawa Di sana tokek memakai topi Bu Dali meringis
+    sambil tertawa Gigi Pak Dali jatuh ke kopi
+  OptionD: Burung kenari burung perkutut Terbang riang kesana kemari Hatiku takkan
+    cemberut Pak Dali pulang hati berseri
+  result: 2
+  indikator: 1/3
