@@ -474,9 +474,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MinigameManager, Assembly-CSharp
-        m_MethodName: ButtonQuestion
+      - m_Target: {fileID: 577658121}
+        m_TargetAssemblyTypeName: BossFightManager, Assembly-CSharp
+        m_MethodName: ButtonBoss
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12167,6 +12167,82 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &481876309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 481876312}
+  - component: {fileID: 481876311}
+  - component: {fileID: 481876310}
+  m_Layer: 5
+  m_Name: Gambar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &481876310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481876309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &481876311
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481876309}
+  m_CullTransparentMesh: 1
+--- !u!224 &481876312
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481876309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1500765263}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 214, y: -136}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &483502463
 GameObject:
   m_ObjectHideFlags: 0
@@ -12877,6 +12953,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571775482}
   m_CullTransparentMesh: 1
+--- !u!1 &577658119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 577658120}
+  - component: {fileID: 577658121}
+  m_Layer: 0
+  m_Name: BossFightManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &577658120
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577658119}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1699.0529, y: 570.19507, z: -3.4604497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &577658121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577658119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc160c455fc432429862f1723aaabe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BossList:
+  - {fileID: 11400000, guid: 8356a3c545a0704478ffe3616dc6b766, type: 2}
+  - {fileID: 11400000, guid: e4e20baae559e374699b483542595889, type: 2}
+  - {fileID: 11400000, guid: 48b4010f7bbcef745b86afc3f3de77f2, type: 2}
+  question: {fileID: 1592702675}
+  optionA: {fileID: 178588154}
+  optionB: {fileID: 1671363393}
+  optionC: {fileID: 1679641217}
+  optionD: {fileID: 1552854815}
+  imageQuestion: {fileID: 481876310}
 --- !u!1 &591449477
 GameObject:
   m_ObjectHideFlags: 0
@@ -33551,9 +33681,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MinigameManager, Assembly-CSharp
-        m_MethodName: ButtonQuestion
+      - m_Target: {fileID: 577658121}
+        m_TargetAssemblyTypeName: BossFightManager, Assembly-CSharp
+        m_MethodName: ButtonBoss
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -34026,9 +34156,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MinigameManager, Assembly-CSharp
-        m_MethodName: ButtonQuestion
+      - m_Target: {fileID: 577658121}
+        m_TargetAssemblyTypeName: BossFightManager, Assembly-CSharp
+        m_MethodName: ButtonBoss
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -34281,9 +34411,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MinigameManager, Assembly-CSharp
-        m_MethodName: ButtonQuestion
+      - m_Target: {fileID: 577658121}
+        m_TargetAssemblyTypeName: BossFightManager, Assembly-CSharp
+        m_MethodName: ButtonBoss
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -45171,6 +45301,7 @@ GameObject:
   - component: {fileID: 1500765263}
   - component: {fileID: 1500765265}
   - component: {fileID: 1500765264}
+  - component: {fileID: 1500765266}
   m_Layer: 5
   m_Name: Soal
   m_TagString: Untagged
@@ -45198,6 +45329,7 @@ RectTransform:
   - {fileID: 959170300}
   - {fileID: 1414481831}
   - {fileID: 17588620}
+  - {fileID: 481876312}
   m_Father: {fileID: 1861538420}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45244,6 +45376,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500765262}
   m_CullTransparentMesh: 1
+--- !u!114 &1500765266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500765262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93a2d842614902641bebe300ca0b0c3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  popUp: {fileID: 1500765262}
 --- !u!1 &1552854813
 GameObject:
   m_ObjectHideFlags: 0
@@ -45473,11 +45618,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1554045588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08f18f3bcadc2394db78f90736614bfa, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f6c8ad0ccc761143860ff0a9cdcf6dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   soal: {fileID: 1500765262}
-  timer: 0
   target: {fileID: 1974452252}
 --- !u!1 &1592702673
 GameObject:
@@ -45600,7 +45744,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -73.34155, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

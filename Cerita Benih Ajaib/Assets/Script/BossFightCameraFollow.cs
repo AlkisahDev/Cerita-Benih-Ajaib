@@ -8,7 +8,7 @@ public class BossFightCameraFollow : MonoBehaviour
     private Vector3 offset = new Vector3(0, 0, -10);
     private Vector3 velocity = Vector3.zero;
     private float smoothTime = 0.25f;
-    public float timer = 0;
+    float timer = 0;
 
     [SerializeField] private Transform target;
     // Update is called once per frame
