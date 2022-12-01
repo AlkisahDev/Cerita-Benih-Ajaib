@@ -13,7 +13,7 @@ public class BossFightManager : MonoBehaviour
     private int correctAnswer = 0;
     public bool isAnswered = false;
 
-    [SerializeField] private GameObject popUp;
+    [SerializeField] Animator animator;
     private void Start()
     {
         SetupQuestion();
@@ -55,13 +55,12 @@ public class BossFightManager : MonoBehaviour
     {
         if (isCorrect)
         {
+            correctAnswer++;
             Debug.Log("Benar");
-            // Masukin Animasi Meninggal
         }
         else
         {
             Debug.Log("Salah");
-            // Dideketin Buto Ijo
         }
 
         // Tau mana yang bener
@@ -78,9 +77,13 @@ public class BossFightManager : MonoBehaviour
 
     public void Update()
     {
-        // if (correctAnswer >= 2 && isAnswered == true)
-        // {
-
-        // }
+        if (correctAnswer >= 2 && isAnswered == true)
+        {
+            animator.SetBool("isThrowing", true);
+        }
+        else if (correctAnswer < 2 && isAnswered == true)
+        {
+            animator.SetBool("isThrowing", false);
+        }
     }
 }
