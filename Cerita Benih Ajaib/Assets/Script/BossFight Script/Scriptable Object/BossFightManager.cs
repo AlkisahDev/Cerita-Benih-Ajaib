@@ -11,7 +11,9 @@ public class BossFightManager : MonoBehaviour
     public Image imageQuestion;
     private int indexBoss;
     private int correctAnswer = 0;
-    private bool isAnswered = false;
+    public bool isAnswered = false;
+
+    [SerializeField] private GameObject popUp;
     private void Start()
     {
         SetupQuestion();

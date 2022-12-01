@@ -18,11 +18,14 @@ public class PopUpScript : MonoBehaviour
     }
 
     IEnumerator PopUp()
-    {
-        // Dialog Box Keluar
-        // popUp.LeanScale(Vector3.zero, 0.8f).setEaseInOutExpo();
-        
+    {   
         popUp.LeanScale(Vector3.one, 1f).setEaseInOutExpo();
+        yield return new WaitForSeconds(1f);
+    }
+
+    IEnumerator PopDown()
+    {
+        popUp.LeanScale(Vector3.zero, 1f).setEaseInOutExpo();
         yield return new WaitForSeconds(1f);
     }
 }
