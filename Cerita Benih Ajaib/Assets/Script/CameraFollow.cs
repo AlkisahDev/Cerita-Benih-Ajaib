@@ -16,7 +16,7 @@ public class CameraFollow : MonoBehaviour
         timer += Time.deltaTime;
 
         // Camera Panning Boss
-        if (timer >= 10)
+        if (timer >= 9)
         {
             Vector3 targetPosition = target.position + offset;
             transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
