@@ -4,17 +4,29 @@ using UnityEngine;
 
 public class DontDestroyBGMusic : MonoBehaviour
 {
-    public static DontDestroyBGMusic instance = null;
-    private void Awake()
+    //public static DontDestroyBGMusic instance = null;
+
+    //private void Awake()
+    //{
+    //    if (instance == null) { instance = this; }
+    //    else if (instance != null)
+    //    {
+    //        Destroy(this.gameObject);
+    //    }
+    //    DontDestroyOnLoad(this.gameObject);
+    //}
+    public AudioSource[] bgm_files;
+    void Start()
     {
-        if (instance == null)
+        SameBGMSettings();
+    }
+
+    private void SameBGMSettings()
+    {
+        float bgm_slider_value = PlayerPrefs.GetFloat("bgm_value", 0.5f);
+        for (int i = 0; i < bgm_files.Length; i++)
         {
-            instance = this;
+            bgm_files[i].volume = bgm_slider_value;
         }
-        else if (instance != null)
-        {
-            Destroy(this.gameObject);
-        }
-        DontDestroyOnLoad(this.gameObject);
     }
 }
