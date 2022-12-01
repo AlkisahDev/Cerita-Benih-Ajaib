@@ -12,7 +12,10 @@ public class BossFightManager : MonoBehaviour
     private int indexBoss;
     private int correctAnswer = 0;
     public bool isAnswered = false;
-
+    public enum animationState
+    {
+        animationDone
+    }
     [SerializeField] Animator animator;
     private void Start()
     {
@@ -80,10 +83,17 @@ public class BossFightManager : MonoBehaviour
         if (correctAnswer >= 2 && isAnswered == true)
         {
             animator.SetBool("isThrowing", true);
+            StartCoroutine(AnimationNormal());
         }
         else if (correctAnswer < 2 && isAnswered == true)
         {
             animator.SetBool("isThrowing", false);
         }
+    }
+
+    IEnumerator AnimationNormal()
+    {
+        yield return new WaitForSeconds(2f);
+        animator.SetBool("isThrowing", false);
     }
 }
