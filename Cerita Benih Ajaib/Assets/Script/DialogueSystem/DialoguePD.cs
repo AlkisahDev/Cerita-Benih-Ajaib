@@ -12,12 +12,12 @@ public class DialoguePD : MonoBehaviour
     [SerializeField] GameObject scene5C;
     [SerializeField] GameObject scene5D;
     [SerializeField] GameObject sceneEndPD;
+    [SerializeField] Player player;
 
-    public GameObject noteButtonPD;
+    // public GameObject noteButtonPD;
     public GameObject itemPD;
     public GameObject gate1;
     public GameObject kochengQPD;
-
     public int activeScenePD = 0;
 
     public enum PakDaliScene
@@ -30,35 +30,57 @@ public class DialoguePD : MonoBehaviour
     }
     public PakDaliScene currentScenePD;
 
+    // public void LoadData(GameData data)
+    // {
+    //     activeScenePD = data.statePD;
+    // }
+
+    // public void SaveData(GameData data)
+    // {
+    //     data.statePD = activeScenePD;
+    //     // data.playerPosition = this.transform.position;
+    //     // data.mainCam = this.transform.position;
+    //     // data.miniCam = this.transform.position;
+    // }
+
     private void Awake()
     {
-        Debug.Log("Now " + currentScenePD);
+        // Debug.Log("Now " + currentScenePD);
         currentScenePD = PakDaliScene.scene5A;
         kochengQPD.SetActive(false);
     }
 
+    private void Start()
+    {
+        activeScenePD = player.ActivePD;
+    }
 
     private void Update()
     {
         if (activeScenePD == 0)
         {
             currentScenePD = PakDaliScene.scene5A;
+            // player.ActivePD = 0;
         }
         else if (activeScenePD == 1)
         {
             currentScenePD = PakDaliScene.scene5B;
+            // player.ActivePD = 1;
         }
         else if (activeScenePD == 2)
         {
             currentScenePD = PakDaliScene.scene5C;
+            // player.ActivePD = 2;
         }
         else if (activeScenePD == 3)
         {
             currentScenePD = PakDaliScene.scene5D;
+            // player.ActivePD = 3;
         }
         else if (activeScenePD == 4)
         {
             currentScenePD = PakDaliScene.sceneEndPD;
+            player.ActivePD = 4;
         }
 
         switch (currentScenePD)
@@ -82,12 +104,16 @@ public class DialoguePD : MonoBehaviour
                 break;
 
             case PakDaliScene.scene5C:
-
+                //Mini Game
                 itemPD.SetActive(false);
                 kochengQPD.SetActive(false);
                 gate1.SetActive(true);
 
                 StartCoroutine(DelayScene5C());
+                // activeScenePD = 3;
+                player.ActivePD = 3;
+                DataPersistenceManager.instance.SaveGame();
+                SceneLoader.ProgressLoad("PakDali");
                 break;
 
             case PakDaliScene.scene5D:
@@ -96,6 +122,7 @@ public class DialoguePD : MonoBehaviour
                 kochengQPD.SetActive(false);
                 gate1.SetActive(true);
 
+                // Debug.Log(player.ActivePD);
                 StartCoroutine(DelayScene5D());
                 break;
 
@@ -106,15 +133,18 @@ public class DialoguePD : MonoBehaviour
                 gate1.SetActive(false);
 
                 StartCoroutine(DelaySceneEndPD());
+                // player.ActivePD = 4;
+                // activeScenePD = 4;
+                // DataPersistenceManager.instance.SaveGame();
                 break;
         }
     }
 
     IEnumerator DelayScene5A()
     {
-        noteButtonPD.SetActive(false);
+        // noteButtonPD.SetActive(false);
         yield return new WaitForSeconds(0.9f);
-        Debug.Log("Now " + currentScenePD);
+        // Debug.Log("Now " + currentScenePD);
         scene5A.SetActive(true);
 
         scene5B.SetActive(false);
@@ -127,14 +157,14 @@ public class DialoguePD : MonoBehaviour
     IEnumerator DelayScene5B()
     {
         yield return new WaitForSeconds(0.9f);
-        Debug.Log("Now " + currentScenePD);
+        // Debug.Log("Now " + currentScenePD);
         scene5B.SetActive(true);
 
         scene5A.SetActive(false);
         scene5C.SetActive(false);
         scene5D.SetActive(false);
         sceneEndPD.SetActive(false);
-        noteButtonPD.SetActive(true);
+        // noteButtonPD.SetActive(true);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -147,7 +177,7 @@ public class DialoguePD : MonoBehaviour
         scene5B.SetActive(false);
         scene5D.SetActive(false);
         sceneEndPD.SetActive(false);
-        noteButtonPD.SetActive(true);
+        // noteButtonPD.SetActive(true);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -160,7 +190,7 @@ public class DialoguePD : MonoBehaviour
         scene5B.SetActive(false);
         scene5C.SetActive(false);
         sceneEndPD.SetActive(false);
-        noteButtonPD.SetActive(false);
+        // noteButtonPD.SetActive(false);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -173,7 +203,7 @@ public class DialoguePD : MonoBehaviour
         scene5B.SetActive(false);
         scene5C.SetActive(false);
         scene5D.SetActive(false);
-        noteButtonPD.SetActive(false);
+        // noteButtonPD.SetActive(false);
         // yield return new WaitForSeconds(1f);
     }
 }

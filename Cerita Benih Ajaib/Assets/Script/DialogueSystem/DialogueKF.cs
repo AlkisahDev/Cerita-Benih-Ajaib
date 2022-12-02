@@ -12,8 +12,9 @@ public class DialogueKF : MonoBehaviour
     [SerializeField] GameObject scene6C;
     [SerializeField] GameObject scene6D;
     [SerializeField] GameObject sceneEndKF;
+    [SerializeField] Player player;
 
-    public GameObject noteButtonKF;
+    // public GameObject noteButtonKF;
     public GameObject itemKF;
     public GameObject gate2;
     public GameObject kochengQKF;
@@ -32,33 +33,42 @@ public class DialogueKF : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("Now " + currentSceneKF);
+        // Debug.Log("Now " + currentSceneKF);
         currentSceneKF = KakFloraScene.scene6A;
         kochengQKF.SetActive(false);
     }
 
+    private void Start()
+    {
+        activeSceneKF = player.ActiveKF;
+    }
 
     private void Update()
     {
         if (activeSceneKF == 0)
         {
             currentSceneKF = KakFloraScene.scene6A;
+            // player.ActiveKF = 0;
         }
         else if (activeSceneKF == 1)
         {
             currentSceneKF = KakFloraScene.scene6B;
+            // player.ActiveKF = 1;
         }
         else if (activeSceneKF == 2)
         {
             currentSceneKF = KakFloraScene.scene6C;
+            // player.ActiveKF = 2;
         }
         else if (activeSceneKF == 3)
         {
             currentSceneKF = KakFloraScene.scene6D;
+            // player.ActiveKF = 3;
         }
         else if (activeSceneKF == 4)
         {
             currentSceneKF = KakFloraScene.sceneEndKF;
+            player.ActiveKF = 4;
         }
 
         switch (currentSceneKF)
@@ -79,6 +89,9 @@ public class DialogueKF : MonoBehaviour
                 gate2.SetActive(true);
 
                 StartCoroutine(DelayScene6B());
+                // player.ActiveKF = 1;
+                // DataPersistenceManager.instance.SaveGame();
+                // SceneLoader.ProgressLoad("KakFlora");
                 break;
 
             case KakFloraScene.scene6C:
@@ -88,6 +101,9 @@ public class DialogueKF : MonoBehaviour
                 gate2.SetActive(true);
 
                 StartCoroutine(DelayScene6C());
+                player.ActiveKF = 3;
+                DataPersistenceManager.instance.SaveGame();
+                SceneLoader.ProgressLoad("KakFlora");
                 break;
 
             case KakFloraScene.scene6D:
@@ -106,15 +122,16 @@ public class DialogueKF : MonoBehaviour
                 gate2.SetActive(false);
 
                 StartCoroutine(DelaySceneEndKF());
+                // player.ActiveKF = 4;
                 break;
         }
     }
 
     IEnumerator DelayScene6A()
     {
-        noteButtonKF.SetActive(false);
+        // noteButtonKF.SetActive(false);
         yield return new WaitForSeconds(0.9f);
-        Debug.Log("Now " + currentSceneKF);
+        // Debug.Log("Now " + currentSceneKF);
         scene6A.SetActive(true);
 
         scene6B.SetActive(false);
@@ -127,14 +144,14 @@ public class DialogueKF : MonoBehaviour
     IEnumerator DelayScene6B()
     {
         yield return new WaitForSeconds(0.9f);
-        Debug.Log("Now " + currentSceneKF);
+        // Debug.Log("Now " + currentSceneKF);
         scene6B.SetActive(true);
 
         scene6A.SetActive(false);
         scene6C.SetActive(false);
         scene6D.SetActive(false);
         sceneEndKF.SetActive(false);
-        noteButtonKF.SetActive(true);
+        // noteButtonKF.SetActive(true);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -147,7 +164,7 @@ public class DialogueKF : MonoBehaviour
         scene6B.SetActive(false);
         scene6D.SetActive(false);
         sceneEndKF.SetActive(false);
-        noteButtonKF.SetActive(true);
+        // noteButtonKF.SetActive(true);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -160,7 +177,7 @@ public class DialogueKF : MonoBehaviour
         scene6B.SetActive(false);
         scene6C.SetActive(false);
         sceneEndKF.SetActive(false);
-        noteButtonKF.SetActive(false);
+        // noteButtonKF.SetActive(false);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -173,7 +190,7 @@ public class DialogueKF : MonoBehaviour
         scene6B.SetActive(false);
         scene6C.SetActive(false);
         scene6D.SetActive(false);
-        noteButtonKF.SetActive(false);
+        // noteButtonKF.SetActive(false);
         // yield return new WaitForSeconds(1f);
     }
 }

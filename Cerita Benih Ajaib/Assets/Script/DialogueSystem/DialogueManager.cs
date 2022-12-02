@@ -18,9 +18,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] GameObject nextDialogButton;
     [SerializeField] GameObject currentScene;
     [SerializeField] private bool isCurrentSceneOneTime;
-
-
-
+    [SerializeField] private bool nextScene = false;
+    [SerializeField] private string nameScene;
 
     public enum NPCType
     {
@@ -34,13 +33,15 @@ public class DialogueManager : MonoBehaviour
     Message[] currentMessages;
     Actor[] currentActors;
 
+    public int skipMessage = 0; //test buat skip di scene 1-4
     int activeMessage = 0;
 
     public void OpenDialogue(Message[] messages, Actor[] actors)
     {
         currentMessages = messages;
         currentActors = actors;
-        activeMessage = 0;
+        activeMessage = skipMessage;
+        // activeMessage = 0; // ini yang asli
 
         currentScene.SetActive(true);
         Debug.Log("Open Dialogue");
@@ -110,6 +111,11 @@ public class DialogueManager : MonoBehaviour
             StartCoroutine(AnimateBoxOut());
             isDialogueActive = false;
             nextDialogButton.SetActive(false);
+
+            if (nextScene == true)
+            {
+                SceneLoader.ProgressLoad(nameScene);
+            }
         }
     }
 

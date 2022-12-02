@@ -334,12 +334,6 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
---- !u!1 &516809598 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 332657954895966828, guid: 45a96d4951f45874a9b00fec65f19272,
-    type: 3}
-  m_PrefabInstance: {fileID: 1469352991}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &516809599 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7649079334143142879, guid: 45a96d4951f45874a9b00fec65f19272,
@@ -27645,6 +27639,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6645509960046210283, guid: 45a96d4951f45874a9b00fec65f19272,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7240315158558497793, guid: 45a96d4951f45874a9b00fec65f19272,
         type: 3}
       propertyPath: joyStick
@@ -27657,13 +27656,28 @@ PrefabInstance:
       objectReference: {fileID: 1650043462}
     - target: {fileID: 7240315158558497793, guid: 45a96d4951f45874a9b00fec65f19272,
         type: 3}
+      propertyPath: nameScene
+      value: MainMap
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240315158558497793, guid: 45a96d4951f45874a9b00fec65f19272,
+        type: 3}
       propertyPath: nextScene
-      value: 
-      objectReference: {fileID: 516809598}
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7240315158558497793, guid: 45a96d4951f45874a9b00fec65f19272,
         type: 3}
       propertyPath: currentNPC
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240315158558497793, guid: 45a96d4951f45874a9b00fec65f19272,
+        type: 3}
+      propertyPath: skipMessage
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7240315158558497793, guid: 45a96d4951f45874a9b00fec65f19272,
+        type: 3}
+      propertyPath: isCurrentSceneOneTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7649079334143142879, guid: 45a96d4951f45874a9b00fec65f19272,
         type: 3}
@@ -30824,7 +30838,7 @@ SpriteRenderer:
   m_Size: {x: 0.29, y: 0.42}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1873232489
@@ -30859,6 +30873,7 @@ MonoBehaviour:
   animator: {fileID: 1873232491}
   movement: {x: 0, y: 0}
   joy: {fileID: 0}
+  stepSound: {fileID: 0}
 --- !u!95 &1873232491
 Animator:
   serializedVersion: 4

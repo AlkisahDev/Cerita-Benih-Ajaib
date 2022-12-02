@@ -12,8 +12,9 @@ public class DialogueKS : MonoBehaviour
     [SerializeField] GameObject scene7C;
     [SerializeField] GameObject scene7D;
     [SerializeField] GameObject sceneEndKS;
+    [SerializeField] Player player;
 
-    public GameObject noteButtonKS;
+    // public GameObject noteButtonKS;
     public GameObject itemKS;
     public GameObject endGate;
     public GameObject kochengQKS;
@@ -32,33 +33,42 @@ public class DialogueKS : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("Now " + currentSceneKS);
+        // Debug.Log("Now " + currentSceneKS);
         currentSceneKS = KakSandiScene.scene7A;
         kochengQKS.SetActive(false);
     }
 
+    private void Start()
+    {
+        activeSceneKS = player.ActiveKS;
+    }
 
     private void Update()
     {
         if (activeSceneKS == 0)
         {
             currentSceneKS = KakSandiScene.scene7A;
+            // player.ActiveKS = 0;
         }
         else if (activeSceneKS == 1)
         {
             currentSceneKS = KakSandiScene.scene7B;
+            // player.ActiveKS = 1;
         }
         else if (activeSceneKS == 2)
         {
             currentSceneKS = KakSandiScene.scene7C;
+            // player.ActiveKS = 2;
         }
         else if (activeSceneKS == 3)
         {
             currentSceneKS = KakSandiScene.scene7D;
+            // player.ActiveKS = 3;
         }
         else if (activeSceneKS == 4)
         {
             currentSceneKS = KakSandiScene.sceneEndKS;
+            player.ActiveKS = 4;
         }
 
         switch (currentSceneKS)
@@ -88,6 +98,9 @@ public class DialogueKS : MonoBehaviour
                 endGate.SetActive(true);
 
                 StartCoroutine(DelayScene7C());
+                player.ActiveKS = 3;
+                DataPersistenceManager.instance.SaveGame();
+                SceneLoader.ProgressLoad("KakSandi");
                 break;
 
             case KakSandiScene.scene7D:
@@ -106,15 +119,16 @@ public class DialogueKS : MonoBehaviour
                 endGate.SetActive(false);
 
                 StartCoroutine(DelaySceneEndKS());
+                // player.ActiveKS = 4;
                 break;
         }
     }
 
     IEnumerator DelayScene7A()
     {
-        noteButtonKS.SetActive(false);
+        // noteButtonKS.SetActive(false);
         yield return new WaitForSeconds(0.9f);
-        Debug.Log("Now " + currentSceneKS);
+        // Debug.Log("Now " + currentSceneKS);
         scene7A.SetActive(true);
 
         scene7B.SetActive(false);
@@ -127,14 +141,14 @@ public class DialogueKS : MonoBehaviour
     IEnumerator DelayScene7B()
     {
         yield return new WaitForSeconds(0.9f);
-        Debug.Log("Now " + currentSceneKS);
+        // Debug.Log("Now " + currentSceneKS);
         scene7B.SetActive(true);
 
         scene7A.SetActive(false);
         scene7C.SetActive(false);
         scene7D.SetActive(false);
         sceneEndKS.SetActive(false);
-        noteButtonKS.SetActive(true);
+        // noteButtonKS.SetActive(true);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -147,7 +161,7 @@ public class DialogueKS : MonoBehaviour
         scene7B.SetActive(false);
         scene7D.SetActive(false);
         sceneEndKS.SetActive(false);
-        noteButtonKS.SetActive(true);
+        // noteButtonKS.SetActive(true);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -160,7 +174,7 @@ public class DialogueKS : MonoBehaviour
         scene7B.SetActive(false);
         scene7C.SetActive(false);
         sceneEndKS.SetActive(false);
-        noteButtonKS.SetActive(false);
+        // noteButtonKS.SetActive(false);
         // yield return new WaitForSeconds(1f);
     }
 
@@ -173,7 +187,7 @@ public class DialogueKS : MonoBehaviour
         scene7B.SetActive(false);
         scene7C.SetActive(false);
         scene7D.SetActive(false);
-        noteButtonKS.SetActive(false);
+        // noteButtonKS.SetActive(false);
         // yield return new WaitForSeconds(1f);
     }
 }
