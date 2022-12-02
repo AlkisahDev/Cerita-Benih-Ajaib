@@ -12,13 +12,14 @@ public class BossFightManager : MonoBehaviour
     private int indexBoss;
     private int correctAnswer = 0;
     public bool isAnswered = false;
-    public enum animationState
-    {
-        animationDone
-    }
+    public bool butoIjoGetClose;
+
+    [SerializeField] GameObject butoIjo;
     [SerializeField] Animator animator;
     private void Start()
     {
+        animator.SetBool("isThrowing", false);
+        butoIjoGetClose = false;
         SetupQuestion();
         indexBoss = 0;
     }
@@ -60,18 +61,22 @@ public class BossFightManager : MonoBehaviour
         {
             correctAnswer++;
             Debug.Log("Benar");
+            Debug.Log(correctAnswer);
         }
         else
         {
+            Debug.Log(correctAnswer);
             Debug.Log("Salah");
         }
 
-        // Tau mana yang bener
+        // pertanyaan ke 1-2
         if (indexBoss != 2)
         {
             indexBoss++;
             SetupQuestion();
         }
+
+        //pertanyaan ke - 3
         else if (indexBoss == 2)
         {
             isAnswered = true;
@@ -80,20 +85,37 @@ public class BossFightManager : MonoBehaviour
 
     public void Update()
     {
-        if (correctAnswer >= 2 && isAnswered == true)
+        // kalau salah 1 kurang
+        if (correctAnswer <= 3 && correctAnswer >= 2 && isAnswered == true)
         {
+            butoIjoGetClose = false;
+
             animator.SetBool("isThrowing", true);
             StartCoroutine(AnimationNormal());
+            correctAnswer = 0;
+            indexBoss = 0;
+            SetupQuestion();
         }
-        else if (correctAnswer < 2 && isAnswered == true)
+        // kalau salah 2 lebih
+        else if (correctAnswer > 0 && correctAnswer < 2 && isAnswered == true)
         {
-            animator.SetBool("isThrowing", false);
+            butoIjoGetClose = true;
+            if (butoIjoGetClose == true)
+            {
+                LeanTween.move(butoIjo, new Vector3(0, butoIjo.transform.position.y + 1.103f, 0), 0.5f);
+            }
+            butoIjoGetClose = false;
+            correctAnswer = 0;
+            isAnswered = false;
+            indexBoss = 0;
+            SetupQuestion();
         }
     }
 
     IEnumerator AnimationNormal()
     {
         yield return new WaitForSeconds(2f);
+        isAnswered = false;
         animator.SetBool("isThrowing", false);
     }
 }

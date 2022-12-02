@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PopUpScript : MonoBehaviour
 {
-    private BossFightManager bossFightManager;
     [SerializeField] private GameObject popUp;
     
     void Start()
@@ -16,9 +15,15 @@ public class PopUpScript : MonoBehaviour
     void Update()
     {
         BossFightManager bossFightManager = FindObjectOfType<BossFightManager>();
-        if (bossFightManager.isAnswered)
+
+        if (bossFightManager.isAnswered == true)
         {
             StartCoroutine(PopDown());
+        }
+
+        else if (bossFightManager.isAnswered == false )
+        {
+            StartCoroutine(PopUp());
         }
     }
 
@@ -30,7 +35,7 @@ public class PopUpScript : MonoBehaviour
 
     IEnumerator PopDown()
     {
-        popUp.LeanScale(Vector3.zero, 0.5f).setEaseInOutExpo();
-        yield return new WaitForSeconds(0.5f);
+        popUp.LeanScale(Vector3.zero, 0.2f).setEaseInOutExpo();
+        yield return new WaitForSeconds(0.2f);
     }
 }
