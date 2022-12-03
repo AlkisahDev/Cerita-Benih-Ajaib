@@ -12850,8 +12850,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1469352991}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!1 &571775482
 GameObject:
   m_ObjectHideFlags: 0
@@ -13041,10 +13039,7 @@ MonoBehaviour:
   optionD: {fileID: 1552854815}
   imageQuestion: {fileID: 481876310}
   isAnswered: 0
-  butoIjoGetClose: 0
-  butoIjo: {fileID: 1223146796}
   animator: {fileID: 2098812487}
->>>>>>> Stashed changes
 --- !u!1 &591449477
 GameObject:
   m_ObjectHideFlags: 0
@@ -45659,11 +45654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f6c8ad0ccc761143860ff0a9cdcf6dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-=======
   soal: {fileID: 1500765262}
-  timer1: 1
->>>>>>> Stashed changes
   target: {fileID: 1974452252}
   target2: {fileID: 341430662}
 --- !u!1 &1592702673
