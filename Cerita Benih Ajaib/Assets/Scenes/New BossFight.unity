@@ -13039,6 +13039,8 @@ MonoBehaviour:
   optionD: {fileID: 1552854815}
   imageQuestion: {fileID: 481876310}
   isAnswered: 0
+  butoIjoGetClose: 0
+  butoIjo: {fileID: 1223146796}
   animator: {fileID: 2098812487}
 --- !u!1 &591449477
 GameObject:
@@ -45655,6 +45657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soal: {fileID: 1500765262}
+  timer1: 0
   target: {fileID: 1974452252}
   target2: {fileID: 341430662}
 --- !u!1 &1592702673

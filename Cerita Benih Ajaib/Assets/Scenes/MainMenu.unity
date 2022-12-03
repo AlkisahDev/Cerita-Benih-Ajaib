@@ -1135,9 +1135,10 @@ GameObject:
   m_Component:
   - component: {fileID: 338556542}
   - component: {fileID: 338556543}
+  - component: {fileID: 338556544}
   m_Layer: 0
   m_Name: MainMenu BGM
-  m_TagString: Untagged
+  m_TagString: BGM
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1166,7 +1167,8 @@ AudioSource:
   m_GameObject: {fileID: 338556541}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3504582805379251260, guid: a2a8b0f726f933d4cbd5e5b206891d9e,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 72bc838e5c8dbf241a05fca224309659, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.45
@@ -1253,6 +1255,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &338556544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338556541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabca59086047c2429e3652bcdbc96f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &341327679
 GameObject:
   m_ObjectHideFlags: 0
@@ -3618,25 +3632,13 @@ MonoBehaviour:
   m_FillRect: {fileID: 2090670543}
   m_HandleRect: {fileID: 2020998551}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.0001
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1797981270}
-        m_TargetAssemblyTypeName: BGMusicVolumeController, Assembly-CSharp
-        m_MethodName: UpdateBGMVolume
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1218804431
 GameObject:
   m_ObjectHideFlags: 0
@@ -4494,13 +4496,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1426787425}
   - component: {fileID: 1426787424}
+  - component: {fileID: 1426787426}
   m_Layer: 0
   m_Name: Gameplay BGM
-  m_TagString: Untagged
+  m_TagString: BGM
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1426787424
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4508,9 +4511,10 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426787423}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3504582805379251260, guid: a2a8b0f726f933d4cbd5e5b206891d9e,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 721946c6ff21a3041b0fa56dd457b133, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.45
@@ -4612,6 +4616,18 @@ Transform:
   m_Father: {fileID: 1797981271}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1426787426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426787423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aabca59086047c2429e3652bcdbc96f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1428995483
 GameObject:
   m_ObjectHideFlags: 0
@@ -5104,25 +5120,13 @@ MonoBehaviour:
   m_FillRect: {fileID: 791113361}
   m_HandleRect: {fileID: 423408041}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.0001
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 154789923}
-        m_TargetAssemblyTypeName: SFX_Volume_Controller, Assembly-CSharp
-        m_MethodName: UpdateSFXVolume
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1544532323
 GameObject:
   m_ObjectHideFlags: 0
@@ -5924,10 +5928,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc9bd4571b4ced9408aec724fcac765e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgm_slider: {fileID: 1212708289}
-  bgm_files:
-  - {fileID: 338556543}
-  - {fileID: 1426787424}
+  BGMVolume: BGMVolume
+  SFXVolume: SFXVolume
+  mixer: {fileID: 24100000, guid: a2a8b0f726f933d4cbd5e5b206891d9e, type: 2}
+  BGMSlider: {fileID: 1212708289}
+  SFXSlider: {fileID: 1532330874}
+  multiplier: 30
 --- !u!4 &1797981271
 Transform:
   m_ObjectHideFlags: 0

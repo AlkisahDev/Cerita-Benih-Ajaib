@@ -15,18 +15,35 @@ public class DontDestroyBGMusic : MonoBehaviour
     //    }
     //    DontDestroyOnLoad(this.gameObject);
     //}
-    public AudioSource[] bgm_files;
-    void Start()
-    {
-        SameBGMSettings();
-    }
+    //public AudioSource[] bgm_files;
+    //void Start()
+    //{
+    //    SameBGMSettings();
+    //}
 
-    private void SameBGMSettings()
+    //private void SameBGMSettings()
+    //{
+    //    float bgm_slider_value = PlayerPrefs.GetFloat("bgm_value", 0.5f);
+    //    for (int i = 0; i < bgm_files.Length; i++)
+    //    {
+    //        bgm_files[i].volume = bgm_slider_value;
+    //    }
+    //}
+
+    private void Awake()
     {
-        float bgm_slider_value = PlayerPrefs.GetFloat("bgm_value", 0.5f);
-        for (int i = 0; i < bgm_files.Length; i++)
+        GameObject[] BGMObj = GameObject.FindGameObjectsWithTag("BGM");
+
+        if (BGMObj.Length > 1)
         {
-            bgm_files[i].volume = bgm_slider_value;
+            Destroy(this.gameObject);
         }
+
+        // if (SFXObj.Length > 1)
+        // {
+        //     Destroy(this.gameObject);
+        // }
+
+        DontDestroyOnLoad(this.gameObject);
     }
 }
