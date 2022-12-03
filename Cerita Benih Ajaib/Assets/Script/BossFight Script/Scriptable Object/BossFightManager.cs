@@ -81,11 +81,13 @@ public class BossFightManager : MonoBehaviour
         {
             isAnswered = true;
         }
+
+        
     }
 
     public void Update()
     {
-        // kalau salah 1 kurang
+        // kalau salah 1 kurang (dali)
         if (correctAnswer <= 3 && correctAnswer >= 2 && isAnswered == true)
         {
             butoIjoGetClose = false;
@@ -95,8 +97,67 @@ public class BossFightManager : MonoBehaviour
             correctAnswer = 0;
             indexBoss = 0;
             SetupQuestion();
+
+                //lanjut ke soal kak flora + salah 1 kurang
+                if(isAnswered == true)
+                {
+                    //indexBoss = 3 (flora)
+                    indexBoss = 3;
+
+                    butoIjoGetClose = false;
+
+                    animator.SetBool("isThrowing", true);
+                    StartCoroutine(AnimationNormal());
+                    correctAnswer = 0;
+                    SetupQuestion();
+                    
+                    //lanjut ke milik sandi
+                    if(isAnswered == true)
+                    {
+                        //indexBoss = 3 (sandi)
+                        indexBoss = 6;
+
+                        butoIjoGetClose = false;
+                        
+                        animator.SetBool("isThrowing", true);
+                        StartCoroutine(AnimationNormal());
+                        correctAnswer = 0;
+                        SetupQuestion();
+
+                        //salah 2 lebih (sandi)
+                        if(correctAnswer > 0 && correctAnswer < 2 && isAnswered == true)
+                        {
+                            butoIjoGetClose = true;
+                            if (butoIjoGetClose == true)
+                            {
+                                LeanTween.move(butoIjo, new Vector3(0, butoIjo.transform.position.y + 1.103f, 0), 0.5f);
+                            }
+                            butoIjoGetClose = false;
+                            correctAnswer = 0;
+                            isAnswered = false;
+                            indexBoss = 0;
+                            SetupQuestion();
+                            }
+                        }
+                        //batas sandi
+
+                    //salah 2 lebih (flora)
+                    if(correctAnswer > 0 && correctAnswer < 2 && isAnswered == true)
+                    {
+                        butoIjoGetClose = true;
+                        if (butoIjoGetClose == true)
+                        {
+                            LeanTween.move(butoIjo, new Vector3(0, butoIjo.transform.position.y + 1.103f, 0), 0.5f);
+                        }
+                        butoIjoGetClose = false;
+                        correctAnswer = 0;
+                        isAnswered = false;
+                        indexBoss = 0;
+                        SetupQuestion();
+                    }
+                }
         }
-        // kalau salah 2 lebih
+        // kalau salah 2 lebih (dali)
         else if (correctAnswer > 0 && correctAnswer < 2 && isAnswered == true)
         {
             butoIjoGetClose = true;

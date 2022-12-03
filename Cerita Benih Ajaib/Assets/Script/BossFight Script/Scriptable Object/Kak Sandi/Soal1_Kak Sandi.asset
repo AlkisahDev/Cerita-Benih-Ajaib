@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4dac983c9c64334f8ec9188815698d9, type: 3}
+  m_Name: Soal1_Kak Sandi
+  m_EditorClassIdentifier: 
+  question: 'Apa nama dan provinsi candi yang dilingkari pada gambar berikut? '
+  imageQuestion: {fileID: 21300000, guid: 009951772ea51c845b878a46851940f2, type: 3}
+  optionA: 'Candi Prambanan, Jawa Tengah '
+  optionB: 'Candi Tikus, Jawa Timur '
+  optionC: 'Candi Borobudur, Jawa Tengah '
+  optionD: 'Candi Singasari, Jawa Timur '
+  answer: 1
