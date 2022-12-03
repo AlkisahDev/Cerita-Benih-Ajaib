@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DontDestroyBGMusic : MonoBehaviour
 {
     //public static DontDestroyBGMusic instance = null;
+    //GameObject BGMObj = GameObject.FindGameObjectWithTag("BGM");
 
     //private void Awake()
     //{
     //    if (instance == null) { instance = this; }
     //    else if (instance != null)
     //    {
-    //        Destroy(this.gameObject);
+    //        Destroy(BGMObj);
     //    }
-    //    DontDestroyOnLoad(this.gameObject);
+    //    DontDestroyOnLoad(BGMObj);
     //}
     //public AudioSource[] bgm_files;
     //void Start()
@@ -32,11 +34,27 @@ public class DontDestroyBGMusic : MonoBehaviour
 
     private void Awake()
     {
+        GameObject[] BGMObjGamePlay = GameObject.FindGameObjectsWithTag("BGMGamePlay");
         GameObject[] BGMObj = GameObject.FindGameObjectsWithTag("BGM");
+
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        if (currentSceneName == "MainMenu")
+        {
+            BGMObjGamePlay[0].SetActive(false);
+            Destroy(this.gameObject);
+            Destroy(BGMObjGamePlay[0]);
+        }
+
 
         if (BGMObj.Length > 1)
         {
             Destroy(this.gameObject);
+        }
+        else if (currentSceneName != "MainMenu" && this.gameObject.CompareTag("BGMGamePlay"))
+        {
+            BGMObjGamePlay[0].SetActive(true);
+            DontDestroyOnLoad(this.gameObject);
         }
 
         // if (SFXObj.Length > 1)
@@ -44,6 +62,17 @@ public class DontDestroyBGMusic : MonoBehaviour
         //     Destroy(this.gameObject);
         // }
 
-        DontDestroyOnLoad(this.gameObject);
+    }
+
+    private void Update()
+    {
+        GameObject[] BGMObjGamePlay = GameObject.FindGameObjectsWithTag("BGMGamePlay");
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        if (currentSceneName == "MainMenu" && this.gameObject.CompareTag("BGMGamePlay"))
+        {
+            BGMObjGamePlay[0].SetActive(false);
+            Destroy(this.gameObject);
+            Destroy(BGMObjGamePlay[0]);
+        }
     }
 }

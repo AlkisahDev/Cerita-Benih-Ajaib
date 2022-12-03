@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class Test1Script : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void DelayingLoadScene()
     {
-        
+        StartCoroutine(DelayLoadScene());
     }
-
-    // Update is called once per frame
-    void Update()
+    public IEnumerator DelayLoadScene()
     {
-        
+        yield return new WaitForSeconds(2f);
     }
 }

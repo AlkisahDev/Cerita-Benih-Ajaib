@@ -42,28 +42,28 @@ public class BGMusicVolumeController : MonoBehaviour
     //}
 
     [SerializeField] string BGMVolume = "BGMVolume";
-    [SerializeField] string SFXVolume = "SFXVolume";
+    //[SerializeField] string SFXVolume = "SFXVolume";
     [SerializeField] AudioMixer mixer;
     [SerializeField] Slider BGMSlider;
-    [SerializeField] Slider SFXSlider;
+    //[SerializeField] Slider SFXSlider;
     [SerializeField] float multiplier = 30f;
 
     private void Awake()
     {
         BGMSlider.onValueChanged.AddListener(BGMSliderValueChanged);
-        SFXSlider.onValueChanged.AddListener(SFXSliderValueChanged);
+        //SFXSlider.onValueChanged.AddListener(SFXSliderValueChanged);
     }
 
     private void Start()
     {
         BGMSlider.value = PlayerPrefs.GetFloat(BGMVolume, BGMSlider.value);
-        SFXSlider.value = PlayerPrefs.GetFloat(SFXVolume, SFXSlider.value);
+        //SFXSlider.value = PlayerPrefs.GetFloat(SFXVolume, SFXSlider.value);
     }
 
     private void OnDisable()
     {
         PlayerPrefs.SetFloat(BGMVolume, BGMSlider.value);
-        PlayerPrefs.SetFloat(SFXVolume, SFXSlider.value);
+        //PlayerPrefs.SetFloat(SFXVolume, SFXSlider.value);
     }
 
     private void BGMSliderValueChanged(float value)
@@ -71,8 +71,8 @@ public class BGMusicVolumeController : MonoBehaviour
         mixer.SetFloat(BGMVolume, Mathf.Log10(value) * multiplier);
     }
 
-    private void SFXSliderValueChanged(float value)
-    {
-        mixer.SetFloat(SFXVolume, Mathf.Log10(value) * multiplier);
-    }
+    //private void SFXSliderValueChanged(float value)
+    //{
+    //    mixer.SetFloat(SFXVolume, Mathf.Log10(value) * multiplier);
+    //}
 }
