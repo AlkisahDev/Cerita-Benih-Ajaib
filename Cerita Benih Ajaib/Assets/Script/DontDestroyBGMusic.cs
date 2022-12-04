@@ -51,22 +51,10 @@ public class DontDestroyBGMusic : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        
-        if (BGMObjGamePlay.Length >= 2)
-        {
-            Destroy(this.gameObject);
-        }
         else if (currentSceneName != "MainMenu" && this.gameObject.CompareTag("BGMGamePlay"))
         {
             BGMObjGamePlay[0].SetActive(true);
             DontDestroyOnLoad(this.gameObject);
-        }
-
-        else if (currentSceneName == "MainMap" && this.gameObject.CompareTag("BGMGamePlay"))
-        {
-            BGMObjGamePlay[0].SetActive(false) ;
-            Destroy(this.gameObject);
-            Destroy(BGMObjGamePlay[0]);
         }
 
         // if (SFXObj.Length > 1)

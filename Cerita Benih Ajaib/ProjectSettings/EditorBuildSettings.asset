@@ -27,9 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMap.unity
     guid: 18345aaf297da5746bc2225f460338c2
   - enabled: 1
-    path: Assets/Scenes/MainMap 1.unity
-    guid: 37d4d82b857aaa248a1f6eb251c008a5
-  - enabled: 1
     path: Assets/Scenes/Minigame/PakDali.unity
     guid: f8ed42d9fa117a742aae2db13c7b66e1
   - enabled: 1
@@ -41,10 +38,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene9.unity
     guid: 1e72300992de5c34b9fa91f4d3a40a21
-  - enabled: 1
-    path: Assets/Scenes/New BossFight Copy.unity
-    guid: f76682900b5861c4e8b4a71065c7d99a
-  - enabled: 1
-    path: Assets/Scenes/EndScene.unity
-    guid: b3c24323845e5264a96ced2ffd0a3cb4
   m_configObjects: {}

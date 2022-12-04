@@ -14,53 +14,28 @@ public class PopUpScript : MonoBehaviour
 
     void Update()
     {
-        BossFightManager1 bossFightManager1 = FindObjectOfType<BossFightManager1>();
+        BossFightManager bossFightManager = FindObjectOfType<BossFightManager>();
 
-        if (bossFightManager1.endOfStage == true 
-            && bossFightManager1.indexBoss == 3)
+        if (bossFightManager.isAnswered == true)
         {
             StartCoroutine(PopDown());
-            bossFightManager1.endOfStage = false;
-        }
-        if (bossFightManager1.endOfStage == true
-            && bossFightManager1.indexBoss == 6)
-        {
-            StartCoroutine(PopDown());
-            bossFightManager1.endOfStage = false;
-        }
-        if (bossFightManager1.endOfStage == true
-            && bossFightManager1.indexBoss == 8)
-        {
-            StartCoroutine(PopDown());
-            bossFightManager1.endOfStage = false;
         }
 
-        if (bossFightManager1.endOfStage == false 
-            && bossFightManager1.indexBoss == 3)
+        else if (bossFightManager.isAnswered == false )
         {
             StartCoroutine(PopUp());
-        }
-        if (bossFightManager1.endOfStage == false
-        && bossFightManager1.indexBoss == 6)
-        {
-            StartCoroutine(PopUp());
-        }
-        if (bossFightManager1.endOfStage == false
-           && bossFightManager1.indexBoss == 9)
-        {
-            StartCoroutine(PopDown());
         }
     }
 
     IEnumerator PopUp()
     {   
+        popUp.LeanScale(Vector3.one, 1f).setEaseInOutExpo();
         yield return new WaitForSeconds(1f);
-        popUp.LeanScale(Vector3.one, 0.5f);
     }
 
     IEnumerator PopDown()
     {
-        popUp.LeanScale(Vector3.zero, 0.3f);
-        yield return new WaitForSeconds(1f);
+        popUp.LeanScale(Vector3.zero, 0.2f).setEaseInOutExpo();
+        yield return new WaitForSeconds(0.2f);
     }
 }

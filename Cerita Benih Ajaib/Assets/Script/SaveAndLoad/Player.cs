@@ -7,7 +7,6 @@ public class Player : MonoBehaviour, IDataPersistence
     [SerializeField] GameObject player;
     [SerializeField] GameObject mainCam;
     [SerializeField] GameObject miniCam;
-
     public int ActivePD { get; set; }
     public int ActiveKF { get; set; }
     public int ActiveKS { get; set; }
@@ -47,7 +46,6 @@ public class Player : MonoBehaviour, IDataPersistence
         data.playerPosition = player.transform.position;
         data.mainCam = mainCam.transform.position;
         data.miniCam = miniCam.transform.position;
-
         data.statePD = ActivePD;
         data.stateKF = ActiveKF;
         data.stateKS = ActiveKS;
