@@ -15,11 +15,11 @@ public class BossFightCameraFollow : MonoBehaviour
     [SerializeField] private Transform target2;
     void Update()
     {
-        BossFightManager bossFightManager = FindObjectOfType<BossFightManager>();
+        BossFightManager1 bossFightManager1 = FindObjectOfType<BossFightManager1>();
         timer += Time.deltaTime;
 
         // Camera Panning Boss
-        if (timer >= timer1 && bossFightManager.isAnswered == false)
+        if (timer >= timer1 && bossFightManager1.endOfStage == false)
         {
             Vector3 targetPosition = target.position + offset;
             transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
