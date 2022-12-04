@@ -12,12 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c7d81c2b3d91e745bf5a62e642ef6e4, type: 3}
   m_Name: Soal 2_PakDali
   m_EditorClassIdentifier: 
-  question: "Ketemu macan di dalam hutan Langsung lari takut dimakan \u2026 \u2026
+  question: "Ketemu macan di dalam hutan                                                                   
+    Langsung lari takut dimakan                                                                                                                                           
+    \u2026                                                                                                                                         
+    \u2026                                                                                                                                          
     Larik yang tepat untuk melengkapi pantun tersebut adalah\u2026"
   imageQuest: {fileID: 0}
-  OptionA: Walau cinta banyak rintangan Ku jaga kau dengan kesetiaan
-  OptionB: Meskipun kita jarang bertemu Akan kuingat selalu wajah mu
-  OptionC: Kepada Tuhan aku mohonkan Cuaca akan membaik di pedesaan
-  OptionD: Pak Dali tidur barusan Bu Dali tak kuat mendengar dengkuran
+  OptionA: Walau cinta banyak rintangan                                      Ku jaga
+    kau dengan kesetiaan
+  OptionB: Meskipun kita jarang bertemu                                      Akan
+    kuingat selalu wajah mu
+  OptionC: Kepada Tuhan aku mohonkan                                      Cuaca akan
+    membaik di pedesaan
+  OptionD: Pak Dali tidur barusan                                      Bu Dali tak
+    kuat mendengar dengkuran
   result: 0
   indikator: 2/3

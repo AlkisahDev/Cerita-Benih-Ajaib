@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c7d81c2b3d91e745bf5a62e642ef6e4, type: 3}
   m_Name: Soal 3_Kak Sandi
   m_EditorClassIdentifier: 
-  question: Berdasarkan ciri-ciri tersebut, daerah yang dimaksud adalah daerah flora
-    bagian?
+  question: Pada wilayah ini terdapat hutan lebat yang ditumbuhi tanaman, seperti
+    meranti, keruing, rotan, dan jati. Berdasarkan ciri-ciri tersebut, daerah yang
+    dimaksud adalah daerah flora bagian?
   imageQuest: {fileID: 0}
   OptionA: Flora di Indonesia Timur
   OptionB: Flora di Indonesia Barat
