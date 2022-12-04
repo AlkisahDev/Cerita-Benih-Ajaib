@@ -14,13 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: Mana pantun berikut yang termasuk jenis pantun jenaka?
   imageQuest: {fileID: 0}
-  OptionA: Untuk apa membeli kera Lebih baik beli parkit Sedih hati tak terkira Melihat
+  OptionA: Untuk apa membeli kera                                       Lebih baik
+    beli parkit                                       Sedih hati tak terkira Melihat                                     
     Bu Dali terbaring sakit
-  OptionB: Dari mana datangnya lintah Dari sawah turun ke kal Dari mana datangnya
-    cinta Dari mata turun ke hati
-  OptionC: Pohon manggis di tepi rawa Di sana tokek memakai topi Bu Dali meringis
-    sambil tertawa Gigi Pak Dali jatuh ke kopi
-  OptionD: Burung kenari burung perkutut Terbang riang kesana kemari Hatiku takkan
-    cemberut Pak Dali pulang hati berseri
+  OptionB: Dari mana datangnya lintah                                      Dari sawah
+    turun ke kal                                      Dari mana datangnya cinta                                     
+    Dari mata turun ke hati
+  OptionC: Pohon manggis di tepi rawa                                      Di sana
+    tokek memakai topi                                      Bu Dali meringis sambil
+    tertawa                                      Gigi Pak Dali jatuh ke kopi
+  OptionD: Burung kenari burung perkutut                                      Terbang
+    riang kesana kemari                                      Hatiku takkan cemberut                                     
+    Pak Dali pulang hati berseri
   result: 2
   indikator: 1/3

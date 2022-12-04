@@ -43,4 +43,10 @@ public class MainMenu : MonoBehaviour
         newGameButton.interactable = false;
         continueGameButton.interactable = false;
     }
+
+    public void ExitGame()
+    {
+        Debug.Log("Exiting Game");
+        Application.Quit();
+    }
 }
