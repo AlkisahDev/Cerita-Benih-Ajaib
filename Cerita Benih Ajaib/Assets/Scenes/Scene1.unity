@@ -19720,7 +19720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1134075805
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34438,7 +34438,7 @@ PrefabInstance:
     - target: {fileID: 7240315158558497793, guid: 45a96d4951f45874a9b00fec65f19272,
         type: 3}
       propertyPath: skipMessage
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7240315158558497793, guid: 45a96d4951f45874a9b00fec65f19272,
         type: 3}
@@ -34665,8 +34665,8 @@ PrefabInstance:
     - target: {fileID: 8386359053860882419, guid: 45a96d4951f45874a9b00fec65f19272,
         type: 3}
       propertyPath: messages.Array.data[5].message
-      value: "Hei wanita tua! Aku tadi mendengar doamu. Apakah kau sungguh-sungguh
-        menginginkan seorang anak?\u201D"
+      value: Hei wanita tua! Aku tadi mendengar doamu. Apakah kau sungguh-sungguh
+        menginginkan seorang anak?
       objectReference: {fileID: 0}
     - target: {fileID: 8386359053860882419, guid: 45a96d4951f45874a9b00fec65f19272,
         type: 3}

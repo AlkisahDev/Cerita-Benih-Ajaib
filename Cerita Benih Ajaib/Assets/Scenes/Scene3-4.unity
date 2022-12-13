@@ -29649,7 +29649,7 @@ PrefabInstance:
     - target: {fileID: 7240315158558497793, guid: 45a96d4951f45874a9b00fec65f19272,
         type: 3}
       propertyPath: skipMessage
-      value: 16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7240315158558497793, guid: 45a96d4951f45874a9b00fec65f19272,
         type: 3}
@@ -29838,7 +29838,7 @@ PrefabInstance:
     - target: {fileID: 8386359053860882419, guid: 45a96d4951f45874a9b00fec65f19272,
         type: 3}
       propertyPath: messages.Array.data[2].message
-      value: Permisi, Kek. Namaku Timun Mas. Ibuku bilang, Kakek akan membantuku
+      value: Permisi, Kakek. Namaku Timun Mas. Ibuku bilang, Kakek akan membantuku
         melawan raksasa jahat yang hendak menyantapku
       objectReference: {fileID: 0}
     - target: {fileID: 8386359053860882419, guid: 45a96d4951f45874a9b00fec65f19272,
@@ -29916,7 +29916,7 @@ PrefabInstance:
         type: 3}
       propertyPath: messages.Array.data[9].message
       value: Selain itu, kamu juga akan belajar hal baru mengenai dunia yang indah
-        ini dengan orang lain.
+        ini dengan menolong orang lain.
       objectReference: {fileID: 0}
     - target: {fileID: 8386359053860882419, guid: 45a96d4951f45874a9b00fec65f19272,
         type: 3}
@@ -32766,7 +32766,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1822360718
 RectTransform:
   m_ObjectHideFlags: 0

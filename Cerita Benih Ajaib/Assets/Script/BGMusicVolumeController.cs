@@ -60,7 +60,7 @@ public class BGMusicVolumeController : MonoBehaviour
         //SFXSlider.value = PlayerPrefs.GetFloat(SFXVolume, SFXSlider.value);
     }
 
-    private void OnDisable()
+    public void OnDisable()
     {
         PlayerPrefs.SetFloat(BGMVolume, BGMSlider.value);
         //PlayerPrefs.SetFloat(SFXVolume, SFXSlider.value);

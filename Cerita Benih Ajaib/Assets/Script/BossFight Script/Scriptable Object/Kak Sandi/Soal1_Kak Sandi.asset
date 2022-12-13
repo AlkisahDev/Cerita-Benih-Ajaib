@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4dac983c9c64334f8ec9188815698d9, type: 3}
   m_Name: Soal1_Kak Sandi
   m_EditorClassIdentifier: 
-  question: 'Apa nama dan provinsi candi yang dilingkari pada gambar berikut? '
+  question: 'Apa nama dan provinsi candi pada gambar berikut? '
   imageQuestion: {fileID: 21300000, guid: 009951772ea51c845b878a46851940f2, type: 3}
   optionA: 'Candi Prambanan, Jawa Tengah '
   optionB: 'Candi Tikus, Jawa Timur '

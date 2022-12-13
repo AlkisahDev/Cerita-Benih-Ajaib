@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4dac983c9c64334f8ec9188815698d9, type: 3}
   m_Name: Soal2_KakFlora
   m_EditorClassIdentifier: 
-  question: '1. Burung elang 2. Rumput 3. Padi 4. Ular 5. Tikus 6. Jangkrik 7. Organisme 
+  question: '1). Burung elang 2). Padi 3). Ular 4). Tikus 5). Jangkrik 6). Organisme 
     Urutan rantai makanan yang tepat dari awal adalah?  '
   imageQuestion: {fileID: 0}
   optionA: 1-3-4-5-2-6
   optionB: 6-2-4-5-1-3
   optionC: 5-4-3-1-6-2
-  optionD: 6-2-5-4-3-1
+  optionD: 2-5-4-3-1-6
   answer: 3
