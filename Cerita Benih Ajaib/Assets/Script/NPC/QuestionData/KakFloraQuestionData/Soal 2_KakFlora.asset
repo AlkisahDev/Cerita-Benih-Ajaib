@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c7d81c2b3d91e745bf5a62e642ef6e4, type: 3}
   m_Name: Soal 2_KakFlora
   m_EditorClassIdentifier: 
-  question: '1) Elang, 2) Rumput, 3) Padi, 4) Ular, 5) Tikus, 6) Jangkrik, 7) Organisme.
-    Urutan rantai makanan yang tepat dari awal adalah? '
+  question: '1) Elang, 2) Padi, 3) Ular, 4) Tikus, 5) Jangkrik, 6) Organisme. Urutan
+    rantai makanan yang tepat dari awal adalah? '
   imageQuest: {fileID: 0}
   OptionA: 1-3-4-5-2-6
   OptionB: 6-2-4-5-1-3
   OptionC: 5-4-3-1-6-2
-  OptionD: 6-2-5-4-3-1
+  OptionD: 2-5-4-3-1-6
   result: 3
   indikator: 2/3

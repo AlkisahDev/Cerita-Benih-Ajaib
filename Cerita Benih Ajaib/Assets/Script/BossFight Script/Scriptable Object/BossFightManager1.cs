@@ -163,11 +163,13 @@ public class BossFightManager1 : MonoBehaviour
         
         else if (roundloss <= 2 && endOfBossFight == true)
         {
+            Debug.Log("MENANG");
             StartCoroutine(ConditionPanelWin());
         }
 
         else if (roundloss >= 3 && endOfBossFight == true)
         {
+            Debug.Log("KALAH");
             StartCoroutine(ConditionPanelLose());
         }
     }
