@@ -13,14 +13,19 @@ public class BossFightManager1 : MonoBehaviour
     public int indexBoss = 0;
     public int correctAnswer;
     public int wrongAnswer;
+    public float timerBoss;
+    public float startTime;
     public bool endOfStage = false;
     public bool butoIjoGetClose;
     public bool endOfBossFight = false;
+    public bool timeIsUp;
     public GameObject feedbackBenar, feedbackSalah;
     public GameObject winPanel, retryPanel;
+    public Image timerUI;
 
     [SerializeField] GameObject butoIjo;
     [SerializeField] Animator animator;
+    [SerializeField] Animator ButoIjoAnimator;
     [SerializeField] GameObject sprite1;
     public GameObject sprite2;
 
@@ -30,6 +35,8 @@ public class BossFightManager1 : MonoBehaviour
         animator.SetBool("isThrowing", false);
         butoIjoGetClose = false;
         SetupQuestion();
+        timerUI.fillAmount = 1f;
+        timerBoss = startTime + 2f;
     }
 
     void SetupQuestion()
@@ -76,7 +83,7 @@ public class BossFightManager1 : MonoBehaviour
             feedbackSalah.SetActive(true);
         }
 
-        if (indexBoss == 0 || indexBoss == 1 )
+        if (indexBoss == 0 || indexBoss == 1)
         {
             indexBoss++;
             SetupQuestion();
@@ -87,7 +94,7 @@ public class BossFightManager1 : MonoBehaviour
             indexBoss++;
             SetupQuestion();
         }
-        else if (indexBoss == 3 || indexBoss == 4 )
+        else if (indexBoss == 3 || indexBoss == 4)
         {
             indexBoss++;
             SetupQuestion();
@@ -112,59 +119,34 @@ public class BossFightManager1 : MonoBehaviour
 
     private void Update()
     {
+        BossTimer();
+        if (timeIsUp == true)
+        {
+            RoundLoss();
+        }
+
         if (correctAnswer <= 3 && correctAnswer >= 2 &&
             wrongAnswer <= 1 && wrongAnswer >= 0 &&
             endOfStage == true
             )
         {
-            Vector3 butoIjoPosition = butoIjo.transform.position;
-            Debug.Log(endOfStage);
-            butoIjoGetClose = false;
-
-            animator.SetBool("isThrowing", true);
-            sprite1.SetActive(true);
-            
-            // posisi sprite 1 = posisi buto ijo
-            sprite1.transform.position = butoIjoPosition;
-
-            //animasi gerak sprite 1
-            LeanTween.move(sprite1, new Vector3(0, butoIjoPosition.y, 0), 1f);
-
-            sprite2.transform.position = butoIjoPosition;
-            LeanTween.scale(sprite2, new Vector3(40, 30, 1), 1f);
-
-
-            StartCoroutine(TransitionAnimation());
-
-            Debug.Log(endOfStage);
-            correctAnswer = 0;
-            wrongAnswer = 0;
-            endOfStage = true;
-
+            RoundWin();
         }
 
         else if (correctAnswer >= 0 && correctAnswer <= 1 &&
             wrongAnswer >= 2 && wrongAnswer <= 3
             && endOfStage == true)
         {
-            endOfStage = true;
-            butoIjoGetClose = true;
-
-            if (butoIjoGetClose == true)
-            {
-                LeanTween.move(butoIjo, new Vector3(0, butoIjo.transform.position.y + 1.103f, 0), 0.5f);
-            }
-
-            butoIjoGetClose = false;
-            correctAnswer = 0;
-            wrongAnswer = 0;
-            roundloss++;
+            RoundLoss();
         }
-        
+
+
         else if (roundloss <= 2 && endOfBossFight == true)
         {
             Debug.Log("MENANG");
             StartCoroutine(ConditionPanelWin());
+            ButoIjoAnimator.SetBool("IsDefeat", true);
+            animator.SetBool("isVictory", true);
         }
 
         else if (roundloss >= 3 && endOfBossFight == true)
@@ -172,6 +154,70 @@ public class BossFightManager1 : MonoBehaviour
             Debug.Log("KALAH");
             StartCoroutine(ConditionPanelLose());
         }
+    }
+    public void BossTimer()
+    {
+        if (timeIsUp == false)
+        {
+            timerBoss -= Time.deltaTime;
+            if (timerBoss <= 0f)
+            {
+                timeIsUp = true;
+                timerBoss = 0f;
+                RoundLoss();
+            }
+
+            float timerNormalized = Mathf.Clamp(timerBoss / startTime, 0f, 1f);
+            timerUI.fillAmount = timerNormalized;
+        }
+    }
+
+    public void RoundWin()
+    {
+        Vector3 butoIjoPosition = butoIjo.transform.position;
+        Debug.Log(endOfStage);
+        butoIjoGetClose = false;
+
+        animator.SetBool("isThrowing", true);
+        sprite1.SetActive(true);
+
+        // posisi sprite 1 = posisi buto ijo
+        //sprite1.transform.position = butoIjoPosition;
+
+        //animasi gerak sprite 1
+        LeanTween.move(sprite1, new Vector3(0, butoIjoPosition.y, 0), 0.6f);
+
+        sprite2.transform.position = butoIjoPosition;
+        LeanTween.scale(sprite2, new Vector3(40, 30, 1), 1f);
+
+
+        StartCoroutine(TransitionAnimation());
+
+        Debug.Log(endOfStage);
+        correctAnswer = 0;
+        wrongAnswer = 0;
+        timerBoss = startTime + 4f;
+        endOfStage = true;
+    }
+
+    public void RoundLoss()
+    {
+        //StopBossTimer();
+        endOfStage = true;
+        butoIjoGetClose = true;
+
+
+        if (butoIjoGetClose == true)
+        {
+            LeanTween.move(butoIjo, new Vector3(0, butoIjo.transform.position.y + 1.103f, 0), 0.5f);
+        }
+
+        butoIjoGetClose = false;
+        correctAnswer = 0;
+        wrongAnswer = 0;
+        roundloss++;
+        timeIsUp = false;
+        timerBoss = startTime;
     }
 
     IEnumerator TransitionAnimation()
