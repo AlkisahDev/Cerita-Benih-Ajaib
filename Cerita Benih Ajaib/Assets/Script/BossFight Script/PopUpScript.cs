@@ -16,7 +16,7 @@ public class PopUpScript : MonoBehaviour
     {
         BossFightManager1 bossFightManager1 = FindObjectOfType<BossFightManager1>();
 
-        if (bossFightManager1.endOfStage == true 
+        if (bossFightManager1.endOfStage == true
             && bossFightManager1.indexBoss == 3)
         {
             StartCoroutine(PopDown());
@@ -39,11 +39,13 @@ public class PopUpScript : MonoBehaviour
             && bossFightManager1.indexBoss == 3)
         {
             StartCoroutine(PopUp());
+            bossFightManager1.BossTimer();
         }
         if (bossFightManager1.endOfStage == false
         && bossFightManager1.indexBoss == 6)
         {
             StartCoroutine(PopUp());
+            bossFightManager1.BossTimer();
         }
         if (bossFightManager1.endOfStage == false
            && bossFightManager1.indexBoss == 9)
